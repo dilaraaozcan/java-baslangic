@@ -68,4 +68,4 @@ This repository will continue to grow as my Java skills improve.
 
 ## ✨ İletişim — Contact  
 **GitHub:** https://github.com/dilaraaozcan  
-**LinkedIn:**   https://www.linkedin.com/in/dilara-ozcan-792b06322/
+**LinkedIn:**   https://www.linkedin.com/in/dilara-özcan-792b06322/
