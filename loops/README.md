@@ -1,65 +1,44 @@
 # 📁 loops — Döngü Yapıları
 
-Bu klasör, Java’da **for**, **while** gibi döngü yapılarının temel kullanımını pekiştirmek için hazırlanan örnekleri içerir.  
-Döngüler, tekrar eden işlemleri otomatikleştirmek için kullanılan temel programlama araçlarındandır.
+Bu klasör, Java'da *while*, *do-while* ve *for* döngülerinin mantığını pekiştirmek için hazırlanmış örnekleri içerir.  
+Tekrar eden işlemlerin programlamadaki kullanımını göstermek ve temel algoritma pratiği kazandırmak amacıyla oluşturulmuştur.
 
 ---
 
 ## 🎯 Bu Klasörün Amacı
-- Döngü mantığını öğrenmek  
-- Tekrar eden işlemleri programlamayı pekiştirmek  
-- Faktöriyel gibi temel algoritmaları uygulamak  
-- Sayaç değişkeni ve koşullarla çalışma alışkanlığı kazanmak  
+
+- 🔄 Döngü mantığını gerçek örneklerle öğrenmek  
+- 🔁 Tekrar eden işlemleri programlamada uygulayabilmek  
+- 🧮 Matematiksel algoritmaları Java ile çözme pratiği kazanmak  
+- 🧠 Sayısal değerleri, koşulları ve döngüleri birlikte kullanmayı öğrenmek  
 
 ---
 
-## 📌 İçerik
+## 📂 Alt Projeler
 
-### ▶️ **Faktoriyel.java**
-Bu dosya, kullanıcıdan alınan sayının **faktöriyelini hesaplayan** temel bir döngü örneğidir.
+### 1️⃣ Faktöriyel Hesaplama
+Basit bir *while* döngüsü ile sayının faktöriyelini hesaplayan uygulama.  
+Kullanıcıdan sayı alınır → 1’den başlayarak çarpılarak sonuç elde edilir.
 
-**Öğrenilen Konular:**
-- `Scanner` ile kullanıcıdan veri almak  
-- `for` döngüsü kullanmak  
-- Sayaç değişkeni (`i`) ile ilerleme  
-- Faktöriyel matematiğini uygulamak  
-- Konsol çıktısı üretmek  
-
-**Koddan Kesit:**
-```java
-int sonuc = 1;
-
-for (int i = 1; i <= sayi; i++) {
-    sonuc *= i;
-}
-System.out.println("Faktöriyel sonucu: " + sonuc);
-```
-
-**Örnek Çıktı:**
-```
-Bir sayı giriniz:
-5
-Faktöriyel sonucu: 120
-```
+### 2️⃣ Armstrong Sayı Kontrolü
+Girilen sayının basamaklarını ve basamak üslerinin toplamını hesaplayıp Armstrong olup olmadığını belirleyen uygulama.  
+*while* döngüsü + *Math.pow()* kullanımı ile algoritma mantığını pekiştirir.
 
 ---
 
-## 🧠 Kısa Bilgi: Faktöriyel Nedir?
-Matematikte faktöriyel:
+## 🧭 Klasör Yapısı
 
-**n! = n × (n-1) × (n-2) × ... × 1**
-
-örneğin:
-
-- 3! = 6  
-- 5! = 120  
-- 7! = 5040  
+loops  
+│── **faktoriyel**  
+│     └── Main.java  
+│── **armstrong**  
+│     └── Main.java  
+└── README.md  
 
 ---
 
-## ▶️ Çalıştırma  
-Bu klasördeki `.java` dosyasını IntelliJ IDEA veya herhangi bir Java IDE üzerinden doğrudan çalıştırabilirsiniz.
+## 🧑‍💻 Not
+Bu klasör, döngülere ait tüm örneklerin toplandığı yerdir.  
+İlerleyen günlerde yeni döngü projeleri eklendikçe README güncellenecektir.
 
 ---
-
-📌 *Bu klasör, döngü mantığını anlamak ve temel algoritmaları uygulamak isteyenler için başlangıç seviye içerikler sunar.*
