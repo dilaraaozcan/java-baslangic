@@ -1,50 +1,44 @@
-# 📁 arrays — Dizi İşlemleri
+# 📘 Arrays (Diziler) — Java Dizi Uygulamaları
 
-Bu klasör, Java'da **dizi (array)** yapısını anlamak ve temel dizi işlemlerini pekiştirmek için hazırlanmış örnekleri içerir.
-
----
-
-## 🎯 Bu Klasörün Amacı
-- Dizi tanımlamayı öğrenmek  
-- Elemanlara erişmeyi göstermek  
-- Döngülerle dizi içinde işlem yapmayı pekiştirmek  
-- Temel algoritma mantığını geliştirmek  
+Bu klasör, Java’da dizilerle çalışmanın temelini öğretmek için hazırlanmış örnek uygulamaları içerir. Şu anda yalnızca ilk örnek olan **Dizi Toplamı (Array Sum)** bulunmaktadır. Yeni örnekler eklendikçe bu README güncellenecektir.
 
 ---
 
-## 📌 İçerik
+## 📌 Mevcut Örnek: Dizi Toplamı (Array Sum)
 
-### ▶️ **DiziToplam.java**
-Bu dosya, bir tamsayı dizisinin elemanlarını **foreach döngüsü** kullanarak toplar ve sonucu ekrana yazdırır.
+Bu örnek, bir tam sayı dizisinin elemanlarını for-each döngüsüyle toplayarak konsola yazdırır. Dizilerde gezinme ve toplama işlemi gibi temel kavramları öğretir.
 
-**Öğrenilen Konular:**
-- `int[]` ile dizi tanımlama  
-- foreach (`for-each`) döngüsünün kullanımı  
-- Toplam alma algoritması  
-- Basit konsol çıktısı  
+### 🔍 Mantık Nasıl Çalışır?
 
-**Koddan Kesit:**
-```java
-int[] sayilar = {10, 20, 30, 40, 50};
-int toplam = 0;
+1. Bir tam sayı dizisi tanımlanır.
+2. 'toplam' değişkeni sıfırdan başlatılır.
+3. for-each döngüsüyle dizideki her eleman toplama eklenir.
+4. Sonuç ekrana yazdırılır.
 
-for (int sayi : sayilar) {
-    toplam += sayi;
-}
-System.out.println("Dizi toplamı: " + toplam);
-```
+### 💡 Örnek Çıktı
 
-**Beklenen Çıktı:**
-```
+Dizi: {10, 20, 30, 40, 50}
+
+Çıktı:
 Dizi toplamı: 150
-```
 
 ---
 
-## ▶️ Çalıştırma  
-Bu klasördeki `.java` dosyasını IntelliJ IDEA veya başka bir Java IDE üzerinden doğrudan çalıştırabilirsiniz.
+## 📄 Dosya Yapısı
+
+arrays/
+   DiziToplam/
+      Main.java
+      README.md
 
 ---
 
-📌 *Bu klasör, temel dizi kavramlarını öğrenmek isteyenler için başlangıç niteliğinde örnekler içerir.*
+## 🚀 Gelecek Eklemeler
 
+Bu klasör ilerleyen zamanlarda şu dizi örnekleriyle genişletilecektir:
+
+- Ortalama hesaplama
+- En büyük / en küçük değeri bulma
+- Linear search (eleman arama)
+- Dinamik dizi alma
+- Çok boyutlu diziler
