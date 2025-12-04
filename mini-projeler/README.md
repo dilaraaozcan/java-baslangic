@@ -13,36 +13,17 @@ Her proje, gerçek hayattaki bir problemi çözmeye yönelik sade bir uygulama �
 
 ---
 
-# 📌 İçerik
+## ▶️ ATM — Basit ATM Uygulaması
 
-## ▶️ **1. ATM.java — Basit ATM Uygulaması**
+Bu proje, kullanıcıya para yatırma, para çekme ve bakiye sorgulama işlemlerini yapabildiği basit bir ATM simülasyonu sunar.
 
-Bu mini proje; **para yatırma, para çekme ve bakiye sorgulama** özelliklerine sahip temel bir ATM simülasyonudur.
-
-### 🧠 Öğrenilen Konular
-- `Scanner` ile kullanıcıdan veri alma  
-- `if–else` karar yapıları  
-- Değişken güncelleme (bakiye artırma/azaltma)  
-- Koşullu işlem kontrolü (yetersiz bakiye)  
-- Konsol tabanlı menü tasarımı  
-
-### 🔍 Koddan Kesit
-```java
-int bakiye = 1000;
-
-if (secim == 1) {
-    bakiye += miktar;
-} else if (secim == 2) {
-    if (miktar <= bakiye) {
-        bakiye -= miktar;
-    } else {
-        System.out.println("Yetersiz bakiye!");
-    }
-}
-```
+### 🧠 Öğrenilenler
+- Scanner ile kullanıcı girdisi alma
+- if-else karar yapıları
+- Değişkenlerin dinamik olarak güncellenmesi
+- Menü tasarımı mantığı
 
 ### 📤 Örnek Akış
-```
 === ATM UYGULAMASI ===
 1- Para Yatır
 2- Para Çek
@@ -51,13 +32,34 @@ Seçiminiz: 2
 Çekilecek miktar:
 500
 Yeni bakiye: 500
-```
 
 ---
 
-# ▶️ Çalıştırma  
-Bu klasördeki `.java` dosyalarını IntelliJ IDEA veya herhangi bir Java IDE üzerinden doğrudan çalıştırabilirsiniz.
+## ▶️ Geometry Calculator — Geometrik Hesaplama Aracı
+
+Bu proje, kullanıcıdan alınan değerlere göre geometrik şekillerin alanını veya çevresini hesaplar.
+
+### 🧠 Öğrenilenler
+- Kullanıcıdan çoklu veri alma
+- Geometrik formüllerin uygulanması
+- Menü yapısı ile işlem seçme
+
+### 📤 Örnek Akış
+=== GEOMETRY CALCULATOR ===
+1- Daire Alanı
+2- Dikdörtgen Alanı
+3- Üçgen Alanı
+Seçiminiz: 1
+Yarıçap:
+5
+Daire Alanı: 78.5
 
 ---
 
-📌 *Bu klasör, öğrendiğim Java temellerini küçük projelerle pekiştirmek için oluşturulmuştur. Zamanla yeni mini projeler eklenecektir.*
+## ▶️ Çalıştırma
+
+Her proje kendi klasörü içinde bulunur ve Main.java üzerinden direkt çalıştırılabilir.
+
+---
+
+📌 Bu klasör, Java öğrenme sürecimde küçük uygulamalarla pratik yapmak amacıyla oluşturulmuştur.
