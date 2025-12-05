@@ -1,44 +1,55 @@
-# 🎯 Sayı Tahmin Oyunu — Guess Number Game
+# 🎯 Sayı Tahmin Oyunu — GuessNumber Game
 
-Bu mini proje, bilgisayarın 0–99 arasında rastgele seçtiği sayıyı kullanıcının tahmin etmeye çalıştığı basit bir konsol oyunudur. Her tahminde oyuncuya “UP” veya “DOWN” yönlendirmesi yapılır ve sayı hedefe çok yaklaştığında ek bir uyarı verilir. Kod, temel Java giriş konularını pekiştirmek için sade bir yapıda tutulmuştur.
+Bu mini proje, bilgisayarın 0–100 arasında rastgele seçtiği sayıyı kullanıcıya tahmin ettirmeyi amaçlayan basit bir konsol oyunudur. Oyuncuya her tahmin sonrası “UP”, “DOWN” ve “çok yaklaştın” gibi yönlendirmeler verilir. Ayrıca geçersiz giriş kontrolü eklenmiştir: oyuncu aralık dışında 2 kere giriş yaparsa oyun otomatik olarak sonlanır.
 
 ---
 
-## 🔍 Oyun Mantığı
+## 🔍 Oyun Kuralları
 
-1. Bilgisayar 0 ile 99 arasında rastgele bir sayı üretir.
-2. Kullanıcıdan tahmin alınır.
-3. Tahmin:
-   - Hedeften küçükse: **UP**
-   - Hedeften büyükse: **DOWN**
-   - Çok yakında ise: **🔥 Çok yaklaştın!**
-   - Doğruysa oyun biter.
-4. Oyun sonunda toplam deneme sayısı gösterilir.
-5. Aralık dışı (0–99 olmayan) girişlerde kullanıcı uyarılır.
+- Bilgisayar 0–100 arasında rastgele bir sayı tutar.  
+- Oyuncu bu sayıyı tahmin etmeye çalışır.  
+- Tahmin:
+  - Hedeften küçükse → **UP**
+  - Hedeften büyükse → **DOWN**
+  - Aradaki fark 5 veya daha azsa → **Çok yaklaştın!**
+- Oyuncu:
+  - **1 kez** aralık dışı sayı (0–100 dışı) girerse → uyarı alır.  
+  - **2. kez** aralık dışı sayı girerse → **oyun sonlandırılır.**
 
 ---
 
 ## 🧠 Öğrenilen Java Konuları
 
-- `Math.random()` ile rastgele sayı üretimi  
-- `Scanner` ile kullanıcıdan veri alma  
+- Rastgele sayı üretimi (`Math.random()`)  
+- Kullanıcıdan input alma (`Scanner`)  
 - `while` döngüsü ile sürekli tahmin alma  
-- `if–else` koşul yapıları  
+- Koşul yapıları (`if`, `else if`, `else`)  
 - Basit giriş doğrulama (range check)  
-- Sayı farkına göre yakınlık ipucu verme  
+- Duruma göre oyunu sonlandırma  
 
 ---
 
-## 📤 Örnek Oyun Çıktısı
+## 📤 Örnek Oyun Akışı
 
-Tahmininizi giriniz: 50  
-UP  
-Tahmininizi giriniz: 72  
-DOWN  
-Tahmininizi giriniz: 68  
+Tahmininiz: 150  
+Geçersiz giriş! Lütfen 0-100 arasında bir sayı giriniz.
+
+Tahmininiz: 200  
+İkinci kez geçersiz giriş yaptınız. Oyun sonlandırıldı.
+
+---
+
+Tahmininiz: 45  
+UP
+
+Tahmininiz: 60  
+DOWN
+
+Tahmininiz: 58  
 Çok yaklaştın!  
-DOWN  
-Tahmininizi giriniz: 67  
+DOWN
+
+Tahmininiz: 57  
 Tebrikler! Doğru tahmin!  
 Toplam deneme sayısı: 4
 
@@ -53,4 +64,4 @@ mini-projeler/
 
 ---
 
-Bu proje, temel döngü ve koşul yapısını uygulamalı şekilde öğrenmek isteyenler için ideal bir örnektir.
+Bu proje, Java’da döngü ve koşul yapılarıyla interaktif konsol uygulamaları geliştirme pratiği yapmak için ideal bir örnektir.
