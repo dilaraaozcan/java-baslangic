@@ -1,26 +1,26 @@
 # 📁 mini-projeler — Konsol Tabanlı Uygulamalar
 
-Bu klasör, Java’nın temel yapı taşlarını kullanarak hazırlanmış küçük ama öğretici konsol projelerini içerir. Her proje, gerçek bir problemi çözen sade bir uygulama şeklinde tasarlanmıştır.
+Bu klasör, Java’nın temel yapı taşlarını kullanarak geliştirdiğim küçük ama öğretici konsol projelerini içerir. Her proje gerçek bir problemi çözen sade bir uygulama mantığıyla tasarlanmıştır. Zamanla yeni mini projeler eklendikçe klasör genişleyecektir.
 
 ---
 
 ## 🎯 Bu Klasörün Amacı
 - Temel Java konularını gerçek uygulamalara dönüştürmek  
-- Koşul yapıları, kullanıcı girişi ve değişken yönetimi pratiği yapmak  
-- Mini projelerle algoritma mantığını güçlendirmek  
-- Öğrenme sürecini düzenli olarak belgelemek  
+- Koşul yapıları, kullanıcı girişleri ve değişken yönetimi üzerinde pratik yapmak  
+- Mini projeler aracılığıyla algoritmik düşünmeyi geliştirmek  
+- Öğrenme sürecini düzenli ve okunabilir bir yapıda saklamak  
 
 ---
 
 ## ▶️ ATM — Basit ATM Uygulaması
 
-Bu proje, kullanıcıya para yatırma, para çekme ve bakiye sorgulama işlemlerini yapabildiği temel bir ATM simülasyonu sunar.
+Bu proje, kullanıcıyla etkileşimli şekilde **para yatırma, para çekme ve bakiye sorgulama** işlemlerini yapabilen basit bir ATM simülasyonudur.
 
 ### 🧠 Öğrenilenler
-- Scanner ile kullanıcı girdisi alma  
+- Kullanıcıdan veri alma (`Scanner`)  
 - if-else karar yapıları  
 - Değişkenlerin dinamik olarak güncellenmesi  
-- Basit konsol menüsü tasarlama  
+- Konsol tabanlı menü tasarımı  
 
 ### 📤 Örnek Akış
 === ATM UYGULAMASI ===  
@@ -36,12 +36,12 @@ Yeni bakiye: 500
 
 ## ▶️ Geometry Calculator — Geometrik Hesaplama Aracı
 
-Bu proje, kullanıcıdan alınan değerlere göre geometrik şekillerin alanını veya çevresini hesaplar.
+Bu proje, kullanıcıdan alınan verilere göre **daire, dikdörtgen ve üçgen** alan/çevre hesaplamaları yapar.
 
 ### 🧠 Öğrenilenler
-- Kullanıcıdan çoklu veri alma  
-- Geometrik formülleri uygulama  
-- Menü yapısıyla işlem seçme  
+- Çoklu kullanıcı girdisi alma  
+- Geometrik formüllerin uygulanması  
+- Switch-case veya if-else ile işlem seçme  
 
 ### 📤 Örnek Akış
 === GEOMETRY CALCULATOR ===  
@@ -55,34 +55,46 @@ Daire Alanı: 78.5
 
 ---
 
-## ▶️ Sayı Tahmin Oyunu — Guess Number Game
+## ▶️ Sayı Tahmin Oyunu — GuessNumber Game (Geliştirilmiş Sürüm)
 
-Bu proje, bilgisayarın rastgele seçtiği sayıyı oyuncunun tahmin etmeye çalıştığı basit bir tahmin oyunudur.  
-Kullanıcı her tahminde “UP”, “DOWN” ve “çok yaklaştın” gibi yönlendirmeler alır.
+Bu proje, bilgisayarın 0–100 arasında tuttuğu sayıyı tahmin etmeye çalışan interaktif bir konsol oyunudur.  
+Oyuncuya her tahminde “UP”, “DOWN” ve yakınlık ipuçları verilir. Ayrıca oyun, **geçersiz girişlerde güvenlik kontrolü** içerir:
+
+### 🔥 Yeni Kurallar & Ek Özellikler
+- Oyun 0–100 aralığında bir sayı üretir.  
+- Oyuncu bu aralığın dışına:
+  - **1. kez çıkarsa:** Uyarı alır → oyun devam eder.  
+  - **2. kez çıkarsa:** Oyun otomatik olarak sonlandırılır.  
+- Tahmin hedeften 5 sayı yakınsa → “Çok yaklaştın!” mesajı verilir.  
+- Deneme sayacı yalnızca geçerli tahminlerde artar.
 
 ### 🧠 Öğrenilenler
-- Math.random() ile rastgele sayı üretme  
+- Rastgele sayı üretme (`Math.random()`)  
 - while döngüsü ile sürekli tahmin alma  
-- if-else ile yönlendirme mesajları  
-- Basit giriş doğrulama (0–99 arası kontrol)  
+- Girdi doğrulama (range validation)  
+- Kullanıcı deneyimini iyileştiren ipucu sistemi  
+- Koşul yapıları ile oyun kontrolü  
 
 ### 📤 Örnek Akış
-Tahmininiz: 50  
-UP  
-Tahmininiz: 72  
-DOWN  
-Tahmininiz: 68  
-Çok yaklaştın!  
-DOWN  
-Tahmininiz: 67  
-Tebrikler! Doğru tahmin!
+Tahmininiz: 150  
+Geçersiz giriş! Lütfen 0-100 arasında bir sayı giriniz.
+
+Tahmininiz: 200  
+İkinci kez geçersiz giriş yaptınız. Oyun sonlandırıldı.
+
+---  
+
+Tahmininiz: 45 → UP  
+Tahmininiz: 60 → DOWN  
+Tahmininiz: 58 → Çok yaklaştın! → DOWN  
+Tahmininiz: 57 → Tebrikler!  
 
 ---
 
 ## ▶️ Çalıştırma
 
-Her proje kendi klasörü içinde bulunur ve `Main.java` dosyası doğrudan çalıştırılabilir.
+Tüm projeler kendi klasörleri içinde bulunur ve `Main.java` dosyası doğrudan çalıştırılarak kullanılabilir.
 
 ---
 
-📌 Bu klasör, Java öğrenirken geliştirdiğim mini uygulamaları düzenli bir yapıda saklamak amacıyla oluşturulmuştur.
+📌 Bu klasör, Java öğrenme sürecimde temel kavramları küçük ve anlaşılır projelerle pekiştirmek amacıyla oluşturulmuştur.
