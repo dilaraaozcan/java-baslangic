@@ -1,103 +1,89 @@
 # 📁 switch-case — Menü ve Karar Yapıları
 
-Bu klasör, Java’da **switch-case** yapısını kullanarak kullanıcıya seçenek sunma, menü yönetimi ve çok adımlı karar verme mantığını pekiştirmek için hazırlanmış örnekleri içerir.
+Bu klasör, Java’da switch-case yapısını gerçekçi örneklerle pekiştirmek için hazırlanmış iki mini proje içerir: bir konsol menü uygulaması ve bir matematiksel zeka testi sistemi.
 
 ---
 
-## 🎯 Bu Klasörün Amacı
-- Switch-case kontrol yapısını öğrenmek  
-- Kullanıcıya çoklu seçenek sunmak  
-- Birden fazla karar mekanizmasını tek programda birleştirmek  
-- İç içe switch-case kullanımını anlamak  
-- Basit bir menü sistemi geliştirmek  
+## 🎯 Klasörün Amacı
+- Switch-case yapısını pratikte öğrenmek
+- Kullanıcıya çoklu seçenek sunmak
+- İç içe karar mekanizmaları tasarlamak
+- Menü mantığını gerçek senaryoda uygulamak
+- Matematiksel problem çözmeyi Java ile birleştirmek
 
 ---
 
-## 📌 İçerik
+# ▶️ 1. Menu.java — Konsol Tabanlı Menü Sistemi
 
-### ▶️ **Menu.java**
-Bu program, bir konsol menüsü oluşturur ve kullanıcının seçimine göre farklı işlemler uygular:
+Kullanıcıya üç seçenek sunar:
 
-1. **Giriş Sistemi**  
-2. **Hesap Makinesi (4 işlem)**  
-3. **Programdan çıkış**
+1. **Giriş Sistemi** — Kullanıcı adı & şifre doğrulama  
+2. **Hesap Makinesi** — Toplama, çıkarma, çarpma, bölme  
+3. **Çıkış** — Programdan güvenli çıkış  
 
----
-
-## 🧠 Öğrenilen Konular
-
-### 🔹 Ana Menü
-```java
-switch (secim) {
-    case 1:  // Giriş
-    case 2:  // Hesap makinesi
-    case 3:  // Çıkış
-}
-```
-Kullanıcının seçtiği menüye göre program farklı bloklara yönlenir.
+### 🧠 Kod Mantığı
+- switch-case ile seçim yapılır  
+- İç içe switch-case ile hesaplama işlemi seçilir  
+- Sıfıra bölme kontrolü yapılır  
 
 ---
 
-### 🔹 Kullanıcı Girişi
-Kullanıcı adı ve şifre doğrulaması yapılır:
+# ▶️ 2. BrainTeaserPicker — Matematiksel Zeka Testi (Switch-Case)
 
-```java
-if (username.equals("admin") && password.equals("password123")) {
-    System.out.println("Giriş başarılı.");
-} else {
-    System.out.println("Giriş başarısız.");
-}
-```
+Bu mini proje, kullanıcının seçtiği zorluk seviyesine göre bir matematik sorusu sorar ve cevabı doğrular.
 
 ---
 
-### 🔹 Hesap Makinesi (İç içe switch-case)
-Kullanıcı bir işlem seçer:
+## 🧠 Zorluk Seviyeleri ve Sorular
 
-```java
-switch (islem) {
-    case 1: // Toplama
-    case 2: // Çıkarma
-    case 3: // Çarpma
-    case 4: // Bölme
-}
-```
-
-Sıfıra bölme kontrolü de dahil edilmiştir:
-
-```java
-if (num2 == 0) {
-    System.out.println("Hata: Sıfıra bölünemez.");
-}
-```
+### 1️⃣ Kolay Soru
+Dizi: 2, 4, 6, 8, ?  
+Doğru cevap → **10**
 
 ---
 
-## 📤 Örnek Kullanıcı Akışı
-
-```
-=== Menü ===
-1. Giriş
-2. Hesap Makinesi
-3. Çıkış
-Lütfen bir seçenek seçin: 2
-
-1. Toplama
-2. Çıkarma
-3. Çarpma
-4. Bölme
-Lütfen bir işlem seçin (1-4): 3
-İki sayı girin:
-6
-7
-Sonuç: 42
-```
+### 2️⃣ Orta Soru
+Bir saatte akrep ve yelkovan kaç kez üst üste gelir?  
+Doğru cevap → **1**
 
 ---
 
-## ▶️ Çalıştırma  
-Bu klasördeki `.java` dosyasını IntelliJ IDEA veya başka bir Java IDE üzerinden doğrudan çalıştırabilirsiniz.
+### 3️⃣ Zor Soru
+Bir sayı 6 ile çarpılıp 9 çıkarıldığında, aynı sayının 3 ile çarpılıp 4 eklendiğinden 20 fazladır.  
+Doğru cevap → **11**
 
 ---
 
-📌 *Bu klasör, switch-case yapısını gerçek bir menü sistemi içinde uygulamak isteyenler için zengin bir örnek sunar.*
+### 4️⃣ Aşırı Zor Soru
+Bir pozitif tam sayının 3 katına 4 eklendiğinde sonuç, sayının 5 katından 10 eksiktir.  
+Doğru cevap → **7**
+
+---
+
+# 🧩 Öğrenilen Konular
+- Çoklu seçim yapısı (switch-case)
+- İç içe karar blokları
+- Kullanıcı girdisi alma (Scanner)
+- Menü tasarımı
+- Matematiksel problem çözümü
+
+---
+
+# 📤 Örnek Kullanıcı Akışı
+===== Zeka Testi =====  
+1 - Kolay  
+2 - Orta  
+3 - Zor  
+4 - Aşırı Zor  
+Seçiminiz: 3  
+Cevap: 11  
+Doğru! 🎉
+
+---
+
+# ▶️ Çalıştırma
+Her klasördeki `Main.java` dosyası IntelliJ IDEA veya herhangi bir Java IDE üzerinden doğrudan çalıştırılabilir.
+
+---
+
+📌 *Bu klasör, switch-case yapısını hem menü kontrolü hem de interaktif matematik testleri ile öğrenmek isteyenler için kapsamlı bir örnek sunar.*
