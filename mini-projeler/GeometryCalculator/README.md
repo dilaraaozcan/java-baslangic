@@ -1,4 +1,4 @@
-📐 Geometry Calculator — Java Console App
+# 📐 Geometry Calculator — Java Console App
 
 Bu proje, kullanıcının seçtiği şekle göre (üçgen veya daire) alan ve çevre hesaplaması yapan basit bir Java konsol uygulamasıdır. Temel Java konularını (Scanner, switch–case, koşullar, matematiksel hesaplamalar) öğrenmek ve pekiştirmek için hazırlanmıştır.
 
