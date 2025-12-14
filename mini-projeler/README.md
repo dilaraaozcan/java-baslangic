@@ -1,20 +1,23 @@
 # 📁 mini-projeler — Konsol Tabanlı Uygulamalar
 
-Bu klasör, Java’nın temel yapı taşlarını kullanarak geliştirdiğim küçük ama öğretici konsol projelerini içerir. Her proje gerçek bir problemi çözen sade bir uygulama mantığıyla tasarlanmıştır. Zamanla yeni mini projeler eklendikçe klasör genişleyecektir.
+Bu klasör, Java’nın temel yapı taşlarını kullanarak geliştirdiğim küçük ama öğretici konsol projelerini içerir.
+Her proje, gerçek bir problemi çözen sade bir uygulama mantığıyla tasarlanmıştır.
+Projeler ilerledikçe algoritmik karmaşıklık ve problem çözme seviyesi artmaktadır.
 
 ---
 
 ## 🎯 Bu Klasörün Amacı
 - Temel Java konularını gerçek uygulamalara dönüştürmek  
-- Koşul yapıları, kullanıcı girişleri ve değişken yönetimi üzerinde pratik yapmak  
+- Koşul yapıları, döngüler ve kullanıcı girdileri üzerinde pratik yapmak  
 - Mini projeler aracılığıyla algoritmik düşünmeyi geliştirmek  
-- Öğrenme sürecini düzenli ve okunabilir bir yapıda saklamak  
+- Öğrenme sürecini düzenli ve okunabilir bir yapıda belgelemek  
 
 ---
 
 ## ▶️ ATM — Basit ATM Uygulaması
 
-Bu proje, kullanıcıyla etkileşimli şekilde **para yatırma, para çekme ve bakiye sorgulama** işlemlerini yapabilen basit bir ATM simülasyonudur.
+Bu proje, kullanıcıyla etkileşimli şekilde **para yatırma, para çekme ve bakiye sorgulama**
+işlemlerini yapabilen temel bir ATM simülasyonudur.
 
 ### 🧠 Öğrenilenler
 - Kullanıcıdan veri alma (`Scanner`)  
@@ -36,7 +39,8 @@ Yeni bakiye: 500
 
 ## ▶️ Geometry Calculator — Geometrik Hesaplama Aracı
 
-Bu proje, kullanıcıdan alınan verilere göre **daire, dikdörtgen ve üçgen** alan/çevre hesaplamaları yapar.
+Bu proje, kullanıcıdan alınan değerlere göre **daire, dikdörtgen ve üçgen**
+için alan veya çevre hesaplamaları yapar.
 
 ### 🧠 Öğrenilenler
 - Çoklu kullanıcı girdisi alma  
@@ -55,25 +59,23 @@ Daire Alanı: 78.5
 
 ---
 
-## ▶️ Sayı Tahmin Oyunu — GuessNumber Game (Geliştirilmiş Sürüm)
+## ▶️ Sayı Tahmin Oyunu — GuessNumber Game (Geliştirilmiş)
 
-Bu proje, bilgisayarın 0–100 arasında tuttuğu sayıyı tahmin etmeye çalışan interaktif bir konsol oyunudur.  
-Oyuncuya her tahminde “UP”, “DOWN” ve yakınlık ipuçları verilir. Ayrıca oyun, **geçersiz girişlerde güvenlik kontrolü** içerir:
+Bu proje, bilgisayarın 0–100 arasında tuttuğu sayıyı tahmin etmeye dayalı
+interaktif bir konsol oyunudur. Oyun, kullanıcı davranışlarını kontrol eden
+ek kurallar ve ipucu sistemi içerir.
 
-### 🔥 Yeni Kurallar & Ek Özellikler
-- Oyun 0–100 aralığında bir sayı üretir.  
-- Oyuncu bu aralığın dışına:
-  - **1. kez çıkarsa:** Uyarı alır → oyun devam eder.  
-  - **2. kez çıkarsa:** Oyun otomatik olarak sonlandırılır.  
-- Tahmin hedeften 5 sayı yakınsa → “Çok yaklaştın!” mesajı verilir.  
-- Deneme sayacı yalnızca geçerli tahminlerde artar.
+### 🔥 Ek Kurallar ve Özellikler
+- Oyun 0–100 aralığında rastgele bir sayı üretir  
+- Geçersiz tahminlerde uyarı ve oyun sonlandırma mekanizması bulunur  
+- Hedefe çok yaklaşıldığında kullanıcıya ipucu verilir  
+- Deneme sayacı yalnızca geçerli tahminlerde artar  
 
 ### 🧠 Öğrenilenler
 - Rastgele sayı üretme (`Math.random()`)  
-- while döngüsü ile sürekli tahmin alma  
+- while döngüsü ile sürekli giriş alma  
 - Girdi doğrulama (range validation)  
-- Kullanıcı deneyimini iyileştiren ipucu sistemi  
-- Koşul yapıları ile oyun kontrolü  
+- Kullanıcı deneyimini iyileştiren kontrol mekanizmaları  
 
 ### 📤 Örnek Akış
 Tahmininiz: 150  
@@ -82,19 +84,42 @@ Geçersiz giriş! Lütfen 0-100 arasında bir sayı giriniz.
 Tahmininiz: 200  
 İkinci kez geçersiz giriş yaptınız. Oyun sonlandırıldı.
 
----  
+---
 
-Tahmininiz: 45 → UP  
-Tahmininiz: 60 → DOWN  
-Tahmininiz: 58 → Çok yaklaştın! → DOWN  
-Tahmininiz: 57 → Tebrikler!  
+## ▶️ Quadratic Equation Solver — İkinci Dereceden Denklem Çözücü
+
+Bu proje, kullanıcıdan alınan katsayılara göre
+**ax² + bx + c = 0** biçimindeki denklemleri analiz eder ve
+denklem türüne uygun kökleri hesaplar.
+
+Program, ikinci dereceden denklemlerin yanı sıra
+özel durumları da (birinci dereceden denklem, çözüm yok, sonsuz çözüm)
+ayrıntılı şekilde ele alır.
+
+### 🧠 Öğrenilenler
+- Matematiksel problem analizi  
+- Diskriminant (Delta) hesaplama  
+- Reel ve karmaşık kök ayrımı  
+- İç içe koşul yapıları (nested if-else)  
+- Sayısal sonuçları formatlı yazdırma  
+
+### 📤 Örnek Akış
+İkinci dereceden denklemin katsayılarını girin:  
+1  -3  2  
+
+Delta: 1  
+İki reel kök var:  
+x1: 2.00  
+x2: 1.00  
 
 ---
 
 ## ▶️ Çalıştırma
 
-Tüm projeler kendi klasörleri içinde bulunur ve `Main.java` dosyası doğrudan çalıştırılarak kullanılabilir.
+Tüm projeler kendi klasörleri içinde yer alır ve
+`Main.java` veya ilgili ana sınıf dosyası doğrudan çalıştırılarak kullanılabilir.
 
 ---
 
-📌 Bu klasör, Java öğrenme sürecimde temel kavramları küçük ve anlaşılır projelerle pekiştirmek amacıyla oluşturulmuştur.
+📌 Bu klasör, Java öğrenme sürecimde temel kavramları
+küçük ama anlamlı projelerle pekiştirmek amacıyla oluşturulmuştur.
