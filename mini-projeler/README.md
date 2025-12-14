@@ -1,4 +1,4 @@
-# 📁 mini-projeler — Konsol Tabanlı Uygulamalar
+# 📁 Mini Projeler — Konsol Tabanlı Uygulamalar
 
 Bu klasör, Java’nın temel yapı taşlarını kullanarak geliştirdiğim küçük ama öğretici konsol projelerini içerir.
 Her proje, gerçek bir problemi çözen sade bir uygulama mantığıyla tasarlanmıştır.
