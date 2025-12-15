@@ -76,7 +76,7 @@ seçilen hizmete göre farklı hesaplamalar gerçekleştirir.
 - Konsol çıktısı ile sonuç sunma  
 
 ### 📤 Örnek Akış
-Kullanıcı adı: Dilara  
+Kullanıcı adı: İrem  
 PIN oluştur: 1234  
 PIN gir: 1234  
 
