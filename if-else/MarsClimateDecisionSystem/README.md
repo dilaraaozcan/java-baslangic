@@ -53,7 +53,7 @@ Maks. Görev  : 2 saat
 
 ## 📄 Dosya Yapısı
 java-baslangic/  
-└── MarsIklimKararSistemi/  
+└── MarsClimateDecisionSystem/  
   ├── Main.java  
   └── README.md  
 
