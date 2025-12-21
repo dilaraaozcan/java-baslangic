@@ -1,44 +1,50 @@
-# 📘 Arrays (Diziler) — Java Dizi Uygulamaları
+# 📘 Arrays — Java Array Applications
 
-Bu klasör, Java’da dizilerle çalışmanın temelini öğretmek için hazırlanmış örnek uygulamaları içerir. Şu anda yalnızca ilk örnek olan **Dizi Toplamı (Array Sum)** bulunmaktadır. Yeni örnekler eklendikçe bu README güncellenecektir.
-
----
-
-## 📌 Mevcut Örnek: Dizi Toplamı (Array Sum)
-
-Bu örnek, bir tam sayı dizisinin elemanlarını for-each döngüsüyle toplayarak konsola yazdırır. Dizilerde gezinme ve toplama işlemi gibi temel kavramları öğretir.
-
-### 🔍 Mantık Nasıl Çalışır?
-
-1. Bir tam sayı dizisi tanımlanır.
-2. 'toplam' değişkeni sıfırdan başlatılır.
-3. for-each döngüsüyle dizideki her eleman toplama eklenir.
-4. Sonuç ekrana yazdırılır.
-
-### 💡 Örnek Çıktı
-
-Dizi: {10, 20, 30, 40, 50}
-
-Çıktı:
-Dizi toplamı: 150
+This folder contains example applications designed to teach the fundamentals of working with arrays in Java. Currently, it includes only the first example, **Array Sum**. As new examples are added, this README will be updated accordingly.
 
 ---
 
-## 📄 Dosya Yapısı
+## 📌 Current Example: Array Sum
+
+This example calculates the sum of elements in an integer array using a for-each loop and prints the result to the console. It demonstrates core concepts such as array traversal and accumulation.
+
+---
+
+## 🔍 How the Logic Works
+
+1. An integer array is defined.
+2. A variable named `sum` is initialized to zero.
+3. Each element of the array is added to `sum` using a for-each loop.
+4. The final result is printed to the console.
+
+---
+
+## 💡 Sample Output
+
+Array: {10, 20, 30, 40, 50}
+
+Output:
+Array sum: 150
+
+---
+
+## 📄 Folder Structure
 
 arrays/
-   DiziToplam/
+   ArraySum/
       Main.java
       README.md
 
 ---
 
-## 🚀 Gelecek Eklemeler
+## 🚀 Future Additions
 
-Bu klasör ilerleyen zamanlarda şu dizi örnekleriyle genişletilecektir:
+This folder will be expanded over time with additional array-based examples, including:
 
-- Ortalama hesaplama
-- En büyük / en küçük değeri bulma
-- Linear search (eleman arama)
-- Dinamik dizi alma
-- Çok boyutlu diziler
+- Average calculation
+- Finding the maximum / minimum value
+- Linear search
+- Dynamic array input
+- Multidimensional arrays
+
+---
