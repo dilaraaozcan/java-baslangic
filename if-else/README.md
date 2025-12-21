@@ -1,130 +1,129 @@
-# 📘 If-Else — Java Koşul Yapıları
+# 📘 If-Else — Java Conditional Structures
 
-Bu klasör, Java’da koşullu ifadelerin (`if`, `else if`, `else`) kullanımını öğrenmek ve pekiştirmek için hazırlanmış örnek projeleri içerir.  
-If-else yapısı, bir programın farklı durumlara göre farklı kararlar almasını sağlayan temel kontrol mekanizmasıdır.
+This folder contains example projects designed to learn and reinforce the use of conditional statements (`if`, `else if`, `else`) in Java.  
+The if-else structure is a fundamental control mechanism that allows a program to make different decisions based on different conditions.
 
-Klasör içeriği zamanla genişletilmekte; her yeni proje if-else mantığını **gerçekçi ve anlamlı bir problem** üzerinden uygulamayı hedeflemektedir.
-
----
-
-## 📌 Örnek 1: Yaş Kontrolü (Reşitlik Doğrulama)
-
-Bu örnek, kullanıcıdan alınan yaş bilgisine göre kişinin reşit olup olmadığını kontrol eder.
-
-- Yaş **18 veya üzerindeyse** → “Reşitsiniz.”
-- Yaş **18’den küçükse** → “Reşit değilsiniz.”
-
-Bu proje, if-else yapısını öğrenmek için en sade ve temel başlangıç örneklerinden biridir.
+The folder content is gradually expanding, and each new project aims to apply if-else logic through **realistic and meaningful problems**.
 
 ---
 
-## 📌 Örnek 2: PasswordStrengthChecker — Şifre Güvenlik Analiz Sistemi
+## 📌 Example 1: Age Check (Legal Age Verification)
 
-Bu proje, kullanıcıdan alınan bir şifreyi karakter karakter analiz ederek şifrenin güvenlik seviyesini belirler. Aşağıdaki kriterler kontrol edilir:
+This example checks whether a person is of legal age based on the age value provided by the user.
 
-- Büyük harf var mı?
-- Küçük harf var mı?
-- Rakam var mı?
-- Özel karakter var mı?
-- Boşluk içeriyor mu?
+- If the age is **18 or above** → “You are an adult.”
+- If the age is **below 18** → “You are underage.”
 
-Karakter çeşitliliğine göre şifre **Çok Zayıf**, **Zayıf**, **Orta**, **Güçlü** veya **Çok Güçlü** olarak sınıflandırılır.  
-Bu örnek, if-else yapısının döngüler ve boolean bayraklarla birlikte nasıl kullanılabileceğini gösterir.
+This project is one of the simplest and most fundamental starting examples for learning if-else structures.
 
 ---
 
-## 📌 Örnek 3: Mars İklim Karar Sistemi — Görev Güvenliği Analizi
+## 📌 Example 2: PasswordStrengthChecker — Password Security Analysis System
 
-Bu proje, Mars yüzey sıcaklığına göre çevresel koşulları analiz eden ve görev güvenliği kararları üreten bir Java konsol uygulamasıdır.
+This project analyzes a user-provided password character by character to determine its security level. The following criteria are checked:
 
-Sistem şu adımları uygular:
-- Girilen sıcaklık değerinin Mars için **geçerli olup olmadığını** kontrol eder
-- Sıcaklığa göre **iklim sınıflandırması** yapar
-- Her iklim durumu için:
-  - Risk seviyesi
-  - Maksimum görev süresi
-  - Gerekli durumlarda ek uyarılar
-  üretir
+- Contains uppercase letters
+- Contains lowercase letters
+- Contains digits
+- Contains special characters
+- Contains whitespace
 
-Bu örnek, if-else zincirlerinin **girdi doğrulama**, **çoklu çıktı üretimi** ve **iç içe karar yapıları** ile birlikte kullanımını öğretir.
+Based on character diversity, the password is classified as **Very Weak**, **Weak**, **Medium**, **Strong**, or **Very Strong**.  
+This example demonstrates how if-else logic can be combined with loops and boolean flags.
 
 ---
 
-## 🔍 If-Else Mantığı Nasıl Çalışır?
+## 📌 Example 3: Mars Climate Decision System — Mission Safety Analysis
 
-1. Bir koşul değerlendirilir  
-2. Koşul doğruysa `if` bloğu çalışır  
-3. Koşul yanlışsa `else if` veya `else` bloğu çalışır  
-4. Program yalnızca **tek bir karar yolunu** izler, diğer bloklar çalışmaz  
+This project is a Java console application that analyzes environmental conditions and produces mission safety decisions based on the surface temperature of Mars.
 
-Bu yapı, özellikle kullanıcı girişlerini kontrol etmek ve karar mekanizmaları kurmak için kullanılır.
+The system follows these steps:
+- Validates whether the entered temperature value is **within a valid range** for Mars
+- Classifies the climate condition based on temperature
+- For each climate condition, generates:
+  - Risk level
+  - Maximum mission duration
+  - Additional warnings when necessary
+
+This example teaches the use of if-else chains together with **input validation**, **multiple output generation**, and **nested decision structures**.
 
 ---
 
-## 💡 Örnek Çıktılar
+## 🔍 How If-Else Logic Works
 
-### Yaş Kontrolü
-Girdi: `18`  
-Çıktı: Reşitsiniz.
+1. A condition is evaluated  
+2. If the condition is true, the `if` block executes  
+3. If the condition is false, the `else if` or `else` block executes  
+4. The program follows **only one decision path**; other blocks are skipped  
 
-Girdi: `14`  
-Çıktı: Reşit değilsiniz.
+This structure is especially useful for validating user input and building decision-making mechanisms.
 
-### Şifre Gücü
-Girdi: `Hello123`  
-Çıktı: Güçlü
+---
 
-Girdi: `Ab1!xY?`  
-Çıktı: Çok Güçlü
+## 💡 Sample Outputs
 
-Girdi: `abc 123`  
-Çıktı: Şifre boşluk içeremez!
+### Age Check
+Input: `18`  
+Output: You are an adult.
+
+Input: `14`  
+Output: You are underage.
+
+### Password Strength
+Input: `Hello123`  
+Output: Strong
+
+Input: `Ab1!xY?`  
+Output: Very Strong
+
+Input: `abc 123`  
+Output: Password cannot contain spaces!
 
 ### Mars Climate Decision System
-Girdi: `-85`  
-Çıktı: Aşırı Soğuk — Risk Seviyesi: Yüksek
+Input: `-85`  
+Output: Extremely Cold — Risk Level: High
 
-Girdi: `8`  
-Çıktı: Ilık — Kısa görevler için uygun
+Input: `8`  
+Output: Mild — Suitable for short missions
 
-Girdi: `120`  
-Çıktı: Sensör verisi geçerli aralık dışında
-
----
-
-## 📄 Dosya Yapısı
-
-if-else/  
-├── YasKontrol/  
-│  ├── Main.java  
-│  └── README.md  
-├── PasswordStrengthChecker/  
-│  ├── Main.java  
-│  └── README.md  
-└── MarsClimateDecisionSystem/  
-  ├── Main.java  
-  └── README.md  
+Input: `120`  
+Output: Sensor data is outside the valid range
 
 ---
 
-## 🧠 Bu Klasörde Öğrenilen Java Konseptleri
+## 📄 Folder Structure
 
-- Kullanıcıdan veri alma (`Scanner`)
-- Koşullu ifadeler (`if`, `else if`, `else`)
-- Sayısal aralık kontrolü
-- Karakter analizi ve doğrulama
-- Girdi doğrulama (input validation)
-- Çoklu çıktı üreten karar mekanizmaları
-- İç içe if yapıları ile karar ağacı oluşturma
+if-else/
+├── AgeCheck/
+│   ├── Main.java
+│   └── README.md
+├── PasswordStrengthChecker/
+│   ├── Main.java
+│   └── README.md
+└── MarsClimateDecisionSystem/
+    ├── Main.java
+    └── README.md
 
 ---
 
-## 🚀 Gelecek Eklemeler
+## 🧠 Java Concepts Covered in This Folder
 
-Bu klasör ilerleyen zamanda şu tarz if-else projeleriyle genişletilebilir:
+- Taking user input (`Scanner`)
+- Conditional statements (`if`, `else if`, `else`)
+- Numeric range validation
+- Character analysis and validation
+- Input validation
+- Decision mechanisms producing multiple outputs
+- Building decision trees using nested if statements
 
-- Not ortalamasına göre geçme/kalma belirleme  
-- Hava durumuna göre kıyafet önerisi  
-- Sayının pozitif / negatif / sıfır kontrolü  
-- Alışveriş tutarına göre indirim hesaplama  
-- Basit kullanıcı yetkilendirme senaryosu
+---
+
+## 🚀 Future Additions
+
+This folder may be expanded in the future with additional if-else based projects such as:
+
+- Pass/fail determination based on grade average  
+- Clothing recommendations based on weather conditions  
+- Checking whether a number is positive / negative / zero  
+- Discount calculation based on purchase amount  
+- Basic user authorization scenarios
