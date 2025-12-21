@@ -1,62 +1,62 @@
-# 🔁 Prime Number Checker — Döngü Tabanlı Asal Sayı Kontrolü
+# 🔁 Prime Number Checker — Loop-Based Primality Test
 
-Bu klasör, Java’da **for döngüsü** kullanarak bir sayının asal olup olmadığını test eden basit bir algoritma örneği içerir.  
-Amaç, döngü yapısını ve koşul kontrolünü pratik bir senaryo üzerinden pekiştirmektir.
-
----
-
-## 🔍 Mantık Nasıl İşler?
-
-Programın çalışma prensibi oldukça basittir:
-
-1. Kullanıcıdan bir tam sayı alınır.
-2. Eğer sayı **2’nin altındaysa**, doğrudan asal olmadığı belirtilir.
-3. `for` döngüsü 2’den başlayarak sayının bir eksiğine kadar tüm sayıları sırayla dener.
-4. Sayı, döngüdeki herhangi bir değere **tam bölünürse**, asal olmadığı hemen yazdırılır ve program sonlanır.
-5. Döngü herhangi bir bölen bulamazsa, sayı **asaldır**.
-
-Bu yöntem, temel *primality test* algoritmasının en anlaşılır uygulamasıdır.
+This folder contains a simple algorithm example that checks whether a number is prime using a **for loop** in Java.  
+The goal is to reinforce loop structures and conditional checks through a practical scenario.
 
 ---
 
-## 🧠 Bu Örnekte Öğrenilenler
+## 🔍 How the Logic Works
 
-- `for` döngüsünün pratik kullanımı  
-- Mod alma operatörü (`%`) ile bölünebilirlik testi  
-- Erken çıkış (early return) yaklaşımı  
-- Koşullu ifadeler (`if`)  
-- Kullanıcıdan giriş alma (`Scanner`)  
+The program follows a straightforward approach:
 
-Özellikle algoritmanın akış mantığını kavramak için son derece yararlıdır.
+1. An integer is taken from the user.
+2. If the number is **less than 2**, it is immediately considered non-prime.
+3. A `for` loop iterates from 2 up to one less than the number.
+4. If the number is **evenly divisible** by any value in the loop, it is declared non-prime and the program terminates early.
+5. If no divisors are found, the number is **prime**.
 
----
-
-## 💡 Örnek Girdiler
-
-Girdi → `13`  
-Çıktı → `13 bir asal sayıdır!`
-
-Girdi → `15`  
-Çıktı → `15 bir asal sayı değildir!`
+This method represents one of the clearest implementations of a basic *primality test* algorithm.
 
 ---
 
-## 📄 Dosya Yapısı
+## 🧠 Concepts Practiced in This Example
+
+- Practical use of the `for` loop  
+- Divisibility testing with the modulo operator (`%`)  
+- Early exit (early return) strategy  
+- Conditional statements (`if`)  
+- Taking user input (`Scanner`)  
+
+This example is especially useful for understanding algorithm flow control.
+
+---
+
+## 💡 Sample Inputs
+
+Input → `13`  
+Output → `13 is a prime number!`
+
+Input → `15`  
+Output → `15 is not a prime number!`
+
+---
+
+## 📄 Folder Structure
 
 loops/
 │
 ├── PrimeNumberCheck/
-│     ├── Main.java
-│     └── README.md
+│   ├── Main.java
+│   └── README.md
 │
-└── diğer döngü uygulamaları…
+└── other loop-based applications…
 
 ---
 
-## 🚀 Geliştirme Adımları
+## 🚀 Possible Enhancements
 
-- Bir aralıktaki tüm asal sayıları listeleyen sürüm  
-- Kullanıcı çıkış yapana kadar çalışan bir menü sistemi  
-- Sadece `√n`’e kadar kontrol eden optimize edilmiş algoritma  
+- A version that lists all prime numbers within a given range  
+- A menu-driven system that runs until the user chooses to exit  
+- An optimized algorithm that checks divisors only up to `√n`  
 
-Bu geliştirmeler, döngü ve algoritma pratiklerini bir üst seviyeye taşır.
+These improvements help elevate loop usage and algorithmic practice to the next level.
