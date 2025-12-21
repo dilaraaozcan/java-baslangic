@@ -1,51 +1,51 @@
-# 📘 Dizi Toplamı — Array Sum Programı
+# 📘 Array Sum — Java Array Program
 
-Bu klasör, Java’da bir tam sayı dizisinin elemanlarını toplayan temel bir örnek uygulamayı içerir. 
-Amaç, dizi yapısını (int[]) ve for-each döngüsünü pratik olarak öğrenmektir.
-
----
-
-## 🔍 Mantık Nasıl Çalışır?
-
-1. Bir tam sayı dizisi tanımlanır.
-2. 'toplam' değişkeni 0 olarak başlatılır.
-3. for-each döngüsüyle dizideki her eleman sırayla toplama eklenir.
-4. Döngü bittiğinde toplam ekrana yazdırılır.
-
-Bu örnek, dizilerde eleman gezme mantığını öğrenmek için ideal bir yapıdır.
+This folder contains a basic example application that calculates the sum of elements in an integer array in Java.  
+The main goal is to practice working with array structures (`int[]`) and the for-each loop.
 
 ---
 
-## 🧠 Öğrenilen Java Konseptleri
+## 🔍 How the Logic Works
 
-- int[] dizi tanımlama
-- for-each döngüsü
-- Birikimli toplama (toplam += eleman)
-- Konsola çıktı yazdırma (System.out.println)
+1. An integer array is defined.
+2. A variable named `sum` is initialized to 0.
+3. Each element in the array is added to `sum using a for-each loop.
+4. After the loop completes, the total sum is printed to the console.
 
----
-
-## 💡 Örnek Çalışma
-
-Dizi: {10, 20, 30, 40, 50}
-
-Çıktı:
-Dizi toplamı: 150
+This example provides an ideal structure for learning how to iterate over array elements.
 
 ---
 
-## 📄 Dosya Yapısı
+## 🧠 Java Concepts Practiced
+
+- Defining integer arrays (`int[]`)
+- Using the for-each loop
+- Cumulative addition (`sum += element`)
+- Printing output to the console (`System.out.println`)
+
+---
+
+## 💡 Sample Execution
+
+Array: {10, 20, 30, 40, 50}
+
+Output:
+Array sum: 150
+
+---
+
+## 📄 Folder Structure
 
 arrays/
-   DiziToplam/
+   ArraySum/
       Main.java
       README.md
 
 ---
 
-## 🚀 Genişletme Fikirleri
+## 🚀 Extension Ideas
 
-- Dizinin ortalamasını hesaplama
-- En büyük / en küçük elemanı bulma
-- Kullanıcıdan dinamik dizi alma
-- Çok boyutlu dizilerde toplama işlemi yapma
+- Calculating the average of array elements
+- Finding the maximum / minimum value
+- Taking dynamic array input from the user
+- Performing sum operations on multidimensional arrays
