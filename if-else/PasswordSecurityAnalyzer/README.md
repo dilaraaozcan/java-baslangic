@@ -1,4 +1,4 @@
-# 🔐 PasswordStrengthChecker — Password Security Analysis System
+# 🔐 PasswordSecurityAnalyzer — Password Security Analysis System
 
 This project is an if-else based Java console application that determines the security level of a user-provided password by analyzing it character by character. The application checks for uppercase letters, lowercase letters, digits, and special characters, and automatically rejects passwords that contain whitespace. After scanning all character types, a security score is calculated and the password is classified as “Very Strong”, “Strong”, “Medium”, “Weak”, or “Very Weak”.
 
@@ -62,7 +62,7 @@ Input: `abc 123`
 ## 📄 Project Structure
 
 if-else/
-└── PasswordStrengthChecker/
+└── PasswordSecurityAnalyzer/
     ├── Main.java
     └── README.md
 
