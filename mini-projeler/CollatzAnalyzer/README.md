@@ -1,53 +1,60 @@
-# 🔢 CollatzAnalyzer — 3n+1 Matematiksel Seri Analizi
+# 🔢 CollatzAnalyzer — 3n+1 Mathematical Sequence Analysis
 
-Bu proje, matematik dünyasının en ilgi çekici problemlerinden biri olan *Collatz Conjecture (3n+1 Problemi)* üzerine oluşturulmuş bir analiz aracıdır. Kullanıcıdan alınan pozitif bir sayı, Collatz kurallarına göre 1’e ulaşana kadar işlenir ve süreç boyunca ortaya çıkan değerler incelenir.
-
----
-
-## 🎯 Programın Özellikleri
-- Collatz serisini adım adım üretir  
-- Kaç adımda 1’e ulaşıldığını hesaplar  
-- Seri boyunca ulaşılan **en yüksek sayıyı** bulur  
-- Başlangıçtan sona tam bir analiz raporu sunar  
+This project is an analysis tool based on one of the most intriguing problems in mathematics: the **Collatz Conjecture (3n+1 Problem)**.  
+A positive integer provided by the user is processed according to the Collatz rules until it reaches 1, and the sequence is analyzed throughout the process.
 
 ---
 
-## 🧠 Collatz Kuralı
-Bir tam sayı için:
+## 🎯 Program Features
 
-- **Çiftse:** n = n / 2  
-- **Tekse:** n = 3n + 1  
-
-Bu işlemler her pozitif sayıyı sonunda 1’e götürür *diye düşünülür*, fakat bu henüz matematikte kanıtlanmamıştır.
+- Generates the Collatz sequence step by step  
+- Calculates how many steps are required to reach 1  
+- Determines the **maximum value** reached during the sequence  
+- Produces a complete analysis report from start to finish  
 
 ---
 
-## 📌 Örnek Kullanım
+## 🧠 Collatz Rule
 
-Girdi:
+For a given positive integer:
+
+- **If the number is even:** n = n / 2  
+- **If the number is odd:** n = 3n + 1  
+
+It is conjectured that these operations will eventually lead every positive integer to 1, although this has not yet been mathematically proven.
+
+---
+
+## 📌 Example Usage
+
+Input:
 12
 
-Çıktı:
-Collatz Serisi:  
-12 → 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1
+Output:
+Collatz Sequence:  
+12 → 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1  
 
-Analiz:
-Başlangıç Sayısı: 12  
-Toplam Adım Sayısı: 9  
-Ulaşılan En Büyük Değer: 16  
-Collatz Doğrulaması: 1'e başarıyla ulaşıldı.
-
----
-
-## 📄 Dosya Yapısı
-mini-projeler/  
-└── CollatzAnalyzer/  
-  ├── Main.java  
-  └── README.md  
+Analysis:
+Starting Number: 12  
+Total Step Count: 9  
+Maximum Value Reached: 16  
+Collatz Verification: Successfully reached 1  
 
 ---
 
-## ▶️ Çalıştırma
-`Main.java` dosyasını IntelliJ IDEA veya herhangi bir Java IDE’de derleyip çalıştırabilirsiniz.
+## 📄 File Structure
 
-Bu proje, döngüler ve sayısal algoritmaları birleştirerek hem matematik hem de programlama mantığını geliştirmek için ideal bir örnektir.
+mini-projects/
+└── CollatzAnalyzer/
+    ├── Main.java
+    └── README.md
+
+---
+
+## ▶️ How to Run
+
+Compile and run the `Main.java` file using IntelliJ IDEA or any Java-compatible IDE.
+
+---
+
+This project is an ideal example for strengthening both mathematical reasoning and programming logic by combining loops with numerical algorithms.
