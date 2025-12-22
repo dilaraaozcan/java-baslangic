@@ -1,81 +1,83 @@
-# 📐 Geometry Calculator — Java Console App
+# 📐 Geometry Calculator — Java Console Application
 
-Bu proje, kullanıcının seçtiği şekle göre (üçgen veya daire) alan ve çevre hesaplaması yapan basit bir Java konsol uygulamasıdır. Temel Java konularını (Scanner, switch–case, koşullar, matematiksel hesaplamalar) öğrenmek ve pekiştirmek için hazırlanmıştır.
+This project is a simple **Java console application** that calculates the **area and perimeter** of a selected geometric shape (triangle or circle).  
+It is designed to practice and reinforce fundamental Java concepts such as `Scanner`, `switch–case`, conditional logic, and mathematical computations.
 
-⸻
+---
 
-✨ Özellikler
+## ✨ Features
 
-– Kullanıcıya menü sunar:
-	1.	Üçgen
-	2.	Daire
+- Displays a menu for shape selection:
+  1. Triangle
+  2. Circle
 
-– Seçime göre gerekli değerleri ister:
-• Üçgen → üç kenar
-• Daire → yarıçap
+- Requests required inputs based on the selected shape:
+  - Triangle → three side lengths
+  - Circle → radius
 
-– Geçerlilik kontrolü yapar:
-• Üçgende üçgen olma şartı (a + b > c vb.)
-• Dairede yarıçap > 0
+- Performs validity checks:
+  - Triangle inequality rule (a + b > c, etc.)
+  - Circle radius must be greater than 0
 
-– Hesaplamalar:
-• Üçgen çevresi = a + b + c
-• Üçgen alanı (Heron formülü):
-s = (a + b + c) / 2
-Alan = √(s (s − a) (s − b) (s − c))
+- Calculations:
+  - Triangle perimeter = a + b + c
+  - Triangle area (Heron's formula):
+    s = (a + b + c) / 2  
+    Area = √(s × (s − a) × (s − b) × (s − c))
 
-• Daire çevresi = 2πr
-• Daire alanı = π r²
+  - Circle perimeter = 2πr
+  - Circle area = πr²
 
-– Hatalı seçimlerde kullanıcıyı uyarır.
+- Displays warning messages for invalid inputs or selections
 
-⸻
+---
 
-🧠 Kullanılan Yapılar
+## 🧠 Java Concepts Practiced
 
-– Scanner ile giriş alma
-– Switch–case ile seçim kontrolü
-– if–else ile doğrulama
-– Math.sqrt() ile karekök alma
-– double ve int veri tipleri
-– Konsol çıktısı üretme
+- User input handling with `Scanner`
+- Menu control using `switch–case`
+- Input validation with `if–else`
+- Mathematical calculations
+- Square root calculation using `Math.sqrt()`
+- Working with `double` and `int` data types
+- Console output formatting
 
-⸻
+---
 
-🖥 Örnek Çıktı
+## 🖥 Sample Output
 
-Aşağıdaki gibi bir çalışma çıktısı üretebilir:
+=== MENU ===  
+1. Triangle  
+2. Circle  
+Select an option: 1  
 
-=== MENÜ ===
-	1.	Üçgen
-	2.	Daire
-Bir seçenek seçiniz: 1
+Enter the sides of the triangle:  
+3  
+4  
+5  
 
-Üçgenin kenarlarını girin:
-3
-4
-5
+Perimeter: 12.0  
+Area: 6.0  
 
-Çevre: 12.0
-Alan 6.0
+---
 
-⸻
+## 📂 Project Structure
 
-📂 Proje Yapısı
-
-src/Main.java
+src/
+└── Main.java  
 README.md
 
-⸻
+---
 
-🚀 Çalıştırma Adımları
-	1.	Projeyi indir veya kopyala
-	2.	IntelliJ IDEA veya herhangi bir IDE ile aç
-	3.	Main.java dosyasını çalıştır
-	4.	Konsoldaki yönergeleri takip et
+## 🚀 How to Run
 
-⸻
+1. Download or clone the project
+2. Open it using IntelliJ IDEA or any Java-compatible IDE
+3. Run the `Main.java` file
+4. Follow the instructions displayed in the console
 
-👩‍💻 Geliştirici Notu
+---
 
-Bu proje, Java başlangıç seviyesini pekiştirmek ve GitHub üzerinde proje yönetimi pratiği yapmak amacıyla geliştirilmiştir.
+## 👩‍💻 Developer Note
+
+This project was developed to strengthen beginner-level Java skills and to practice basic project documentation and version control on GitHub.
