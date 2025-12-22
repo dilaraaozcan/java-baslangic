@@ -1,50 +1,54 @@
-# 🧠 BrainTeaserPicker — Switch-Case Zeka Testi Uygulaması
+# 🧠 BrainTeaserPicker — Switch-Case Brain Teaser Application
 
-Bu mini proje, Java'da **switch-case** yapısını gerçek bir senaryo üzerinden öğretmeyi amaçlayan etkileşimli bir zeka testi uygulamasıdır. Kullanıcı 1–4 arasında bir zorluk seviyesi seçer ve her seviyeye ait farklı bir matematiksel zeka sorusunu cevaplamaya çalışır.
-
----
-
-## 🎯 Projenin Amacı
-- switch-case kullanımını pratik bir örnekle öğrenmek  
-- Kullanıcı girdisi alma, koşullu kontrol ve karar yapıları  
-- Matematiksel problem çözmeyi kod ile birleştirmek  
-- Farklı zorluk seviyeleriyle interaktif bir uygulama geliştirmek  
+This mini project is an interactive brain teaser application designed to teach the **switch-case** structure in Java through a real-world scenario. The user selects a difficulty level between 1 and 4 and attempts to answer a mathematical logic question associated with that level.
 
 ---
 
-## 📌 İçerik (Sorular ve Zorluklar)
+## 🎯 Project Objective
 
-### **1️⃣ Kolay Soru**
+- Learn switch-case usage through a practical example  
+- Practice user input handling, conditional checks, and decision structures  
+- Combine mathematical problem-solving with programming  
+- Develop an interactive application with multiple difficulty levels  
+
+---
+
+## 📌 Content (Questions and Difficulty Levels)
+
+### **1️⃣ Easy**
 2, 4, 6, 8, ?  
-Doğru cevap → **10**
+Correct answer → **10**
 
-### **2️⃣ Orta Soru**
-Bir saatte akrep ve yelkovan kaç kez üst üste gelir?  
-Doğru cevap → **1**
+### **2️⃣ Medium**
+How many times do the hour and minute hands overlap in one hour?  
+Correct answer → **1**
 
-### **3️⃣ Zor Soru**
-6x − 9, aynı x’in 3x + 4 ifadesinden **20 fazladır**.  
-Denklem:  
+### **3️⃣ Hard**
+6x − 9 is **20 greater** than 3x + 4.  
+Equation:  
 6x − 9 = 3x + 24  
-Doğru cevap → **11**
+Correct answer → **11**
 
-### **4️⃣ Aşırı Zor Soru**
+### **4️⃣ Extreme**
 3x + 4 = 5x − 10  
-Doğru cevap → **7**
+Correct answer → **7**
 
 ---
 
-## ▶️ Çalıştırma
-`Main.java` dosyasını bir Java IDE (IntelliJ IDEA vb.) ile çalıştırmanız yeterlidir. Kullanıcıya zorluk seviyesi sorulacak ve soruyu cevaplaması istenecektir.
+## ▶️ How to Run
+
+Simply run the `Main.java` file using a Java IDE (such as IntelliJ IDEA).  
+The user will be prompted to select a difficulty level and answer the corresponding question.
 
 ---
 
-## 🧠 Öğrenilen Konular
-- switch-case ile çoklu durum kontrolü  
-- Scanner ile kullanıcıdan veri alma  
-- Karar yapılarıyla doğru/yanlış kontrolü  
-- Matematiksel mantık problemlerini kod içinde uygulama  
+## 🧠 Concepts Practiced
+
+- Multi-branch decision making with switch-case  
+- Taking user input with `Scanner`  
+- Validating correct and incorrect answers using conditional logic  
+- Implementing mathematical logic problems in code  
 
 ---
 
-Bu proje, Java’da koşul yapıları ve kullanıcı etkileşimini öğrenenler için hem öğretici hem eğlenceli bir örnektir.
+This project provides both an educational and enjoyable example for learners exploring conditional structures and user interaction in Java.
