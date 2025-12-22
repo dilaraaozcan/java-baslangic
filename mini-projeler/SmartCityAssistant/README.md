@@ -1,85 +1,84 @@
-# 🏙️ SmartCityAssistant — Java Console App
+# 🏙️ SmartCityAssistant — Java Console Application
 
-Bu proje, kullanıcıya sunulan menü üzerinden **taksi ücreti**, **elektrik faturası** ve **sağlık (BMI & ideal kilo)** hesaplamaları yapan basit bir Java konsol uygulamasıdır.  
-Temel Java konularını (Scanner, if–else, switch–case, koşullar ve matematiksel işlemler) pekiştirmek amacıyla geliştirilmiştir.
+This project is a **Java console application** that provides multiple city-related services through an interactive menu, including **taxi fare calculation**, **electricity bill calculation**, and **health analysis (BMI & ideal weight)**.  
+It was developed to reinforce fundamental Java concepts such as `Scanner`, `if–else`, `switch–case`, conditional logic, and mathematical computations.
 
-⸻
+---
 
-✨ Özellikler
+## ✨ Features
 
-– Kullanıcıdan giriş bilgileri alır:
-• Kullanıcı adı
-• PIN oluşturma ve doğrulama
+- Collects user authentication data:
+  - Username
+  - PIN creation and verification
 
-– Menü üzerinden hizmet seçimi sunar:
-	1.	Taksi Ücreti Hesaplama  
-	2.	Elektrik Faturası Hesaplama  
-	3.	Sağlık Kontrolü (BMI & İdeal Kilo)
+- Provides a service selection menu:
+  1. Taxi Fare Calculation  
+  2. Electricity Bill Calculation  
+  3. Health Analysis (BMI & Ideal Weight)
 
-– Seçilen hizmete göre gerekli bilgileri ister:
-• Taksi → mesafe, zaman (day/night), hafta sonu durumu  
-• Elektrik → tüketim miktarı (kWh)  
-• Sağlık → cinsiyet, boy, kilo  
+- Requests required inputs based on the selected service:
+  - **Taxi:** distance, time (day/night), weekend status  
+  - **Electricity:** consumption amount (kWh)  
+  - **Health:** gender, height, weight  
 
-– Hesaplama işlemleri:
-• Taksi ücreti → başlangıç ücreti + mesafe × tarife  
-• Elektrik faturası → kademeli fiyatlandırma + vergi  
-• BMI → kilo / (boy²)  
-• İdeal kilo → cinsiyete göre hesaplama  
+- Performs calculations:
+  - Taxi fare → base fare + distance × tariff  
+  - Electricity bill → tiered pricing + tax  
+  - BMI → weight / (height²)  
+  - Ideal weight → calculated based on gender  
 
-– Hatalı girişlerde kullanıcıyı uyarır.
+- Displays warning messages for invalid inputs
 
-⸻
+---
 
-🧠 Kullanılan Yapılar
+## 🧠 Java Concepts Practiced
 
-– Scanner ile kullanıcıdan veri alma  
-– if–else yapıları ile koşul kontrolü  
-– switch–case ile menü yönetimi  
-– Matematiksel hesaplamalar  
-– double ve int veri tipleri  
-– Konsol çıktısı üretme  
+- User input handling with `Scanner`  
+- Conditional logic using `if–else`  
+- Menu management with `switch–case`  
+- Mathematical computations  
+- Working with `double` and `int` data types  
+- Console output formatting  
 
-⸻
+---
 
-🖥 Örnek Çıktı
+## 🖥 Sample Output
 
-Aşağıdaki gibi bir çalışma çıktısı üretebilir:
+Username: Gece 
+Create PIN: 1234  
+Enter PIN: 1234  
 
-Kullanıcı adı: Dilara  
-PIN oluştur: 1234  
-PIN gir: 1234  
+1-Taxi  2-Electricity  3-Health  
+Choice: 1  
 
-1-Taksi  2-Elektrik  3-Sağlık  
-Seçim: 1  
+Distance (km): 10  
+Time (day/night): day  
+Weekend (yes/no): no  
 
-Mesafe (km): 10  
-Zaman (day/night): day  
-Hafta sonu (yes/no): no  
+Taxi Fare: $18.00  
 
-Taksi Ücreti: $18.00  
+=== SUMMARY ===  
+Total Amount: $18.00  
 
-=== ÖZET ===  
-Toplam Tutar: $18.00  
+---
 
-⸻
+## 📂 Project Structure
 
-📂 Proje Yapısı
-
-src/SmartCityAssistant.java  
+src/
+└── SmartCityAssistant.java  
 README.md  
 
-⸻
+---
 
-🚀 Çalıştırma Adımları
+## 🚀 How to Run
 
-1. Projeyi bilgisayarına indir veya kopyala  
-2. IntelliJ IDEA (veya herhangi bir Java IDE) ile aç  
-3. SmartCityAssistant.java dosyasını çalıştır  
-4. Konsoldaki yönergeleri takip et  
+1. Download or clone the project  
+2. Open it using IntelliJ IDEA (or any Java-compatible IDE)  
+3. Run the `SmartCityAssistant.java` file  
+4. Follow the instructions displayed in the console  
 
-⸻
+---
 
-👩‍💻 Geliştirici Notu
+## 👩‍💻 Developer Note
 
-Bu mini proje, Java’nın temel kontrol yapılarının öğrenilmesi ve GitHub üzerinde küçük ölçekli projelerin düzenli şekilde paylaşılması amacıyla hazırlanmıştır.
+This mini project was created to practice core Java control structures and to maintain a clean and organized workflow while sharing small-scale projects on GitHub.
