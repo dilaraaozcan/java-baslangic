@@ -1,79 +1,79 @@
-# 📐 Quadratic Equation Solver (Java)
+# 📐 Quadratic Equation Solver — Java Console Application
 
-Bu proje, Java kullanılarak ikinci dereceden denklemlerin köklerini hesaplayan
-konsol tabanlı bir uygulamadır.
+This project is a **console-based Java application** that calculates the roots of quadratic equations.  
+Based on the coefficients provided by the user (`a`, `b`, `c`), the program analyzes the equation type and applies the appropriate solution method.
 
-Program, kullanıcıdan alınan katsayılara (a, b, c) göre denklemin türünü analiz eder
-ve uygun çözüm yöntemini uygular. Lineer denklemler, reel kökler ve karmaşık kökler
-durumları ayrı ayrı ele alınmıştır.
+Linear equations, real roots, and complex roots are all handled explicitly.
 
 ---
 
-## 🔍 Çözülen Denklem
+## 🔍 Solved Equation
 
 ax² + bx + c = 0
 
 ---
 
-## ⚙️ Programın Özellikleri
+## ⚙️ Program Features
 
-- a = 0 durumunda denklemi otomatik olarak **birinci dereceden** denklem olarak ele alır
-- Çözüm yok, tek çözüm veya sonsuz çözüm durumlarını ayırt eder
-- Diskriminant (Δ) hesaplar
-- Δ > 0 → İki reel kök
-- Δ = 0 → Çift katlı kök
-- Δ < 0 → Karmaşık kökler (reel + sanal kısım)
-- Sonuçları okunabilir formatta ekrana yazdırır
-
----
-
-## 🧠 Kullanılan Kavramlar
-
-- Koşullu ifadeler (if-else)
-- Matematiksel formüller
-- Diskriminant (Delta) analizi
-- Karmaşık sayıların hesaplanması
-- Kullanıcıdan veri alma (Scanner)
-- Ondalıklı sayı formatlama
+- Automatically treats the equation as **linear** when `a = 0`
+- Distinguishes between:
+  - No solution
+  - One solution
+  - Infinite solutions
+- Calculates the discriminant (Δ)
+- Handles all discriminant cases:
+  - Δ > 0 → Two real roots
+  - Δ = 0 → One repeated real root
+  - Δ < 0 → Complex roots (real + imaginary parts)
+- Displays results in a clear and readable format
 
 ---
 
-## 🛠️ Teknolojiler
+## 🧠 Java Concepts Practiced
+
+- Conditional logic (`if–else`)
+- Mathematical formulas
+- Discriminant (Delta) analysis
+- Complex number calculations
+- User input handling with `Scanner`
+- Decimal number formatting
+
+---
+
+## 🛠️ Technologies Used
 
 - Java
-- java.util.Scanner
-- Math.sqrt()
+- `java.util.Scanner`
+- `Math.sqrt()`
 
 ---
 
-## ▶️ Programın Çalışma Adımları
+## ▶️ Program Flow
 
-1. Kullanıcıdan a, b ve c katsayıları alınır
-2. Denklem türü kontrol edilir
-3. Delta hesaplanır
-4. Denklem durumuna göre kökler hesaplanır
-5. Sonuçlar ekrana yazdırılır
+1. The user enters coefficients `a`, `b`, and `c`
+2. The program determines the equation type
+3. The discriminant (Δ) is calculated
+4. Roots are computed based on the equation case
+5. Results are printed to the console
 
 ---
 
-## 📌 Örnek Çıktı
+## 📌 Sample Output
 
-İkinci dereceden denklemin katsayılarını girin:  
+Enter coefficients of the quadratic equation:  
 1  -3  2  
 
 Delta: 1  
-İki reel kök var:  
+Two real roots found:  
 x1: 2.00  
 x2: 1.00  
 
 ---
 
-## 🎯 Projenin Amacı
+## 🎯 Project Purpose
 
-Bu proje, temel matematiksel problemlerin Java ile nasıl çözülebileceğini
-öğrenmek ve algoritmik düşünme becerisini geliştirmek amacıyla hazırlanmıştır.
+This project was developed to demonstrate how fundamental mathematical problems can be solved using Java while improving algorithmic thinking and decision-making skills.
 
 ---
 
-📌 Geliştirme sürecinde daha profesyonel matematiksel ve algoritmik projeler
-eklenmesi hedeflenmektedir.
+📌 More advanced mathematical and algorithmic projects are planned to be added as part of the learning process.
