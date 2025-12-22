@@ -1,50 +1,69 @@
-# 🔢 StringToIntegerConverter — Manuel String → Integer Dönüşümü
+# 🔢 StringToIntegerConverter — Manual String to Integer Conversion
 
-Bu mini proje, Java’da hiçbir hazır metot (Integer.parseInt, valueOf vb.) kullanmadan string formatındaki bir sayıyı gerçek bir int değerine dönüştüren manuel bir algoritma içerir. Amaç, karakter okuma, ASCII tabanlı dönüşüm ve negatif sayı yönetimi gibi düşük seviye işlemleri öğrenmektir.
+This mini project implements a manual algorithm in Java that converts a numeric string into a real `int` value **without using any built-in methods** such as `Integer.parseInt()` or `valueOf()`.  
+The goal is to understand low-level operations such as character processing, ASCII-based conversion, and negative number handling.
 
-## 🎯 Projenin Amacı
-- String içindeki rakamları tek tek okuyarak sayıya dönüştürmek  
-- Hazır dönüştürme fonksiyonlarını kullanmadan kendi parseInt mantığını yazmak  
-- Negatif işaret (-) kontrolünü elle yapmak  
-- Rakam olmayan karakterleri tespit edip hatayı yönetmek  
-- char → int dönüşüm mantığını kavramak  
+---
 
-## 🧠 Algoritma Nasıl Çalışır?
-1. Kullanıcıdan string formatında bir giriş alınır.  
-2. Eğer ilk karakter '-' ise sayı negatiftir → işaret kaydedilir, döngü 1. indexten başlar.  
-3. Her karakter döngü içinde kontrol edilir:  
-   - '0' ile '9' arasında değilse → hata mesajı verilir ve işlem durdurulur.  
-4. Her rakam ASCII tabanında şu formülle işlenir:  
-   sonuc = sonuc * 10 + (c - '0')  
-5. Döngü bittiğinde sayı negatife çevrilmesi gerekiyorsa:  
-   sonuc = -sonuc  
-6. Dönüştürülen gerçek integer ekrana yazdırılır.
+## 🎯 Project Objective
 
-## 📤 Örnek Kullanım
-Girdi: "1234"  
-Çıktı: 1234  
+- Convert digits inside a string into an integer value step by step  
+- Implement custom `parseInt` logic without built-in conversion functions  
+- Manually handle the negative sign (`-`)  
+- Detect and handle non-numeric characters  
+- Understand the logic behind character (`char`) to integer (`int`) conversion  
 
-Girdi: "-45"  
-Çıktı: -45  
+---
 
-Girdi: "12a3"  
-Çıktı: Geçersiz karakter: sadece rakam giriniz!  
+## 🧠 How the Algorithm Works
 
-Girdi: "-"  
-Çıktı: Geçersiz sayı  
+1. A string input is taken from the user.  
+2. If the first character is `'-'`, the number is marked as negative and iteration starts from index 1.  
+3. Each character is validated inside a loop:  
+   - If the character is not between `'0'` and `'9'`, an error message is displayed and execution stops.  
+4. Each digit is processed using the ASCII-based formula:  
+   result = result * 10 + (c - '0')  
+5. After the loop ends, if the number is marked as negative:  
+   result = -result  
+6. The final integer value is printed to the console.
 
-## 🧩 Öğrenilen Java Konuları
-- ASCII üzerinden char → int dönüşümü  
-- String manipülasyonu  
-- Döngü ile karakter işleme  
-- Hata kontrolü ve girdi doğrulama  
-- Negatif sayı işaretini yönetme  
-- Temel algoritma tasarımı  
+---
 
-## 📄 Dosya Yapısı
-string/  
-└── StringToIntegerConverter/  
-  ├── Main.java  
-  └── README.md  
+## 📤 Example Usage
 
-Bu proje, temel veri türü dönüşümlerini anlamaya yardımcı olur ve birçok teknik mülakatta geçen “parseInt’i kendin yazabilir misin?” mantığının sade bir uygulamasıdır.
+Input: `"1234"`  
+Output: `1234`  
+
+Input: `"-45"`  
+Output: `-45`  
+
+Input: `"12a3"`  
+Output: `Invalid character: digits only are allowed!`  
+
+Input: `"-"`  
+Output: `Invalid number`
+
+---
+
+## 🧩 Java Concepts Learned
+
+- ASCII-based character to integer conversion  
+- String manipulation  
+- Character processing with loops  
+- Error handling and input validation  
+- Manual handling of negative numbers  
+- Basic algorithm design  
+
+---
+
+## 📄 File Structure
+
+string/
+└── StringToIntegerConverter/
+    ├── Main.java
+    └── README.md
+
+---
+
+This project helps build a solid understanding of primitive data type conversions and represents a clean implementation of the classic technical interview question:  
+**“Can you implement `parseInt` yourself?”**
