@@ -1,55 +1,57 @@
-# 📐 GeometryApp — Geometrik Şekil Alan Hesaplayıcı
+# 📐 GeometryApp — Geometric Shape Area Calculator
 
-Bu proje, kullanıcıdan alınan veriler doğrultusunda farklı geometrik şekillerin alanlarını hesaplayan modüler bir sistemdir. Amaç, her hesaplama işlemini ayrı bir **metot** içinde yöneterek temiz ve sürdürülebilir bir kod yapısı kurmaktır.
-
----
-
-## 🎯 Programın Yaptıkları
-
-- **Dikdörtgen Alanı:** Kısa ve uzun kenar bilgilerine göre hesaplama yapar.
-- **Üçgen Alanı:** Taban ve yükseklik bilgilerini kullanarak alanı bulur.
-- **Daire Alanı:** Yarıçap bilgisini alarak `Math.PI` hassasiyetiyle hesaplama yapar.
-- **Dinamik Girdi:** Tüm değerler `Scanner` sınıfı üzerinden kullanıcıdan alınır.
-- **Modüler Yapı:** Her şekil için `return` tipi döndüren bağımsız metotlar kullanılır.
+This project is a modular Java console application that calculates the areas of different geometric shapes based on user input.  
+The main goal is to manage each calculation inside a separate **method**, resulting in a clean, readable, and maintainable code structure.
 
 ---
 
-## 🧠 Örnek Kullanım
+## 🎯 What the Program Does
 
-Girdi:
-- Dikdörtgen: 5, 10
-- Üçgen: 4, 6
-- Daire: 3
-
-Çıktı:
-Dikdörtgenin Alanı: 50.0
-Üçgenin Alanı: 12.0
-Dairenin Alanı: 28.274333882308138
+- **Rectangle Area:** Calculates the area using width and height values.
+- **Triangle Area:** Computes the area based on base and height.
+- **Circle Area:** Calculates the area using the radius with `Math.PI` precision.
+- **Dynamic Input:** All values are taken from the user via the `Scanner` class.
+- **Modular Design:** Each shape calculation is handled by an independent method that returns a value.
 
 ---
 
-## 📌 Öğrenilen Konular
+## 🧠 Example Usage
 
-- **Method Definition:** Parametre alan ve değer döndüren (`return`) metot tasarımı.
-- **Scanner Class:** Kullanıcı etkileşimi ve `double` veri tipi yönetimi.
-- **Code Reusability:** Hesaplama mantığını ana bloktan ayırarak kodun tekrar kullanılabilirliğini artırma.
-- **Math Library:** `Math.PI` kullanımı ile sabit değerlere erişim.
+Input:
+- Rectangle: 5, 10
+- Triangle: 4, 6
+- Circle: 3
+
+Output:
+Rectangle Area: 50.0  
+Triangle Area: 12.0  
+Circle Area: 28.274333882308138  
 
 ---
 
-## 📄 Dosya Yapısı
+## 📌 Concepts Learned
+
+- **Method Definition:** Designing methods that take parameters and return values using `return`.
+- **Scanner Class:** Managing user interaction and `double` data types.
+- **Code Reusability:** Separating calculation logic from the main flow to improve reusability.
+- **Math Library:** Accessing constant values using `Math.PI`.
+
+---
+
+## 📄 File Structure
 
 methods/
-   GeometryApp/
-      Main.java
-      README.md
+└── GeometryApp/
+    ├── Main.java
+    └── README.md
 
 ---
 
-## ▶️ Çalıştırma
+## ▶️ How to Run
 
-`Main.java` dosyasını herhangi bir Java IDE (IntelliJ, Eclipse, VS Code) ile derleyip çalıştırabilirsiniz. Program başladığında sırasıyla şekil bilgilerini girmeniz istenecektir.
+Compile and run the `Main.java` file using any Java IDE (IntelliJ IDEA, Eclipse, VS Code).  
+When the program starts, you will be prompted to enter the required dimensions for each shape.
 
 ---
 
-Bu proje, Java'da metot yapısını ve kullanıcı girdileriyle matematiksel işlemler yapmayı pekiştiren öğretici bir örnektir.
+This project is an educational example that reinforces method structures and mathematical computations using user input in Java.
