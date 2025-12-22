@@ -1,67 +1,71 @@
-# 🎯 Sayı Tahmin Oyunu — GuessNumber Game
+# 🎯 GuessNumber Game — Number Guessing Console Game (Java)
 
-Bu mini proje, bilgisayarın 0–100 arasında rastgele seçtiği sayıyı kullanıcıya tahmin ettirmeyi amaçlayan basit bir konsol oyunudur. Oyuncuya her tahmin sonrası “UP”, “DOWN” ve “çok yaklaştın” gibi yönlendirmeler verilir. Ayrıca geçersiz giriş kontrolü eklenmiştir: oyuncu aralık dışında 2 kere giriş yaparsa oyun otomatik olarak sonlanır.
-
----
-
-## 🔍 Oyun Kuralları
-
-- Bilgisayar 0–100 arasında rastgele bir sayı tutar.  
-- Oyuncu bu sayıyı tahmin etmeye çalışır.  
-- Tahmin:
-  - Hedeften küçükse → **UP**
-  - Hedeften büyükse → **DOWN**
-  - Aradaki fark 5 veya daha azsa → **Çok yaklaştın!**
-- Oyuncu:
-  - **1 kez** aralık dışı sayı (0–100 dışı) girerse → uyarı alır.  
-  - **2. kez** aralık dışı sayı girerse → **oyun sonlandırılır.**
+This mini project is a simple **Java console game** where the computer randomly selects a number between 0 and 100 and the user tries to guess it.  
+After each guess, the player receives hints such as **UP**, **DOWN**, or **Very close!**.  
+The game also includes **input validation**: if the player enters an out-of-range value twice, the game automatically ends.
 
 ---
 
-## 🧠 Öğrenilen Java Konuları
+## 🔍 Game Rules
 
-- Rastgele sayı üretimi (`Math.random()`)  
-- Kullanıcıdan input alma (`Scanner`)  
-- `while` döngüsü ile sürekli tahmin alma  
-- Koşul yapıları (`if`, `else if`, `else`)  
-- Basit giriş doğrulama (range check)  
-- Duruma göre oyunu sonlandırma  
-
----
-
-## 📤 Örnek Oyun Akışı
-
-Tahmininiz: 150  
-Geçersiz giriş! Lütfen 0-100 arasında bir sayı giriniz.
-
-Tahmininiz: 200  
-İkinci kez geçersiz giriş yaptınız. Oyun sonlandırıldı.
+- The computer randomly selects a number between 0 and 100.
+- The player attempts to guess the number.
+- After each guess:
+  - If the guess is lower than the target → **UP**
+  - If the guess is higher than the target → **DOWN**
+  - If the absolute difference is 5 or less → **Very close!**
+- Input validation rules:
+  - **First** out-of-range input (outside 0–100) → warning message
+  - **Second** out-of-range input → game is terminated
 
 ---
 
-Tahmininiz: 45  
+## 🧠 Java Concepts Practiced
+
+- Random number generation using `Math.random()`
+- User input handling with `Scanner`
+- Continuous input processing using a `while` loop
+- Conditional logic (`if`, `else if`, `else`)
+- Basic input validation (range checking)
+- Game termination based on state and conditions
+
+---
+
+## 📤 Sample Game Flow
+
+Your guess: 150  
+Invalid input! Please enter a number between 0 and 100.
+
+Your guess: 200  
+Second invalid input detected. Game terminated.
+
+---
+
+Your guess: 45  
 UP
 
-Tahmininiz: 60  
+Your guess: 60  
 DOWN
 
-Tahmininiz: 58  
-Çok yaklaştın!  
+Your guess: 58  
+Very close!  
 DOWN
 
-Tahmininiz: 57  
-Tebrikler! Doğru tahmin!  
-Toplam deneme sayısı: 4
+Your guess: 57  
+Congratulations! Correct guess!  
+Total number of attempts: 4
 
 ---
 
-## 📄 Dosya Yapısı
+## 📄 File Structure
 
-mini-projeler/  
- SayiTahminOyunu/  
-  Main.java  
-  README.md  
+mini-projects/
+└── GuessNumberGame/
+    ├── Main.java
+    └── README.md
 
 ---
 
-Bu proje, Java’da döngü ve koşul yapılarıyla interaktif konsol uygulamaları geliştirme pratiği yapmak için ideal bir örnektir.
+## 📝 Summary
+
+This project is an ideal example for practicing interactive console applications in Java using loops and conditional structures. It reinforces game logic, user guidance, and input validation in a clear and engaging way.
