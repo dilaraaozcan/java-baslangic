@@ -1,128 +1,125 @@
-# 📁 Mini Projeler — Konsol Tabanlı Uygulamalar
+# 📁 Mini Projects — Console-Based Applications
 
-Bu klasör, Java’nın temel yapı taşlarını kullanarak geliştirdiğim küçük ama öğretici konsol projelerini içerir.  
-Her proje, gerçek hayattan basit bir problemi ele alan sade bir uygulama mantığıyla tasarlanmıştır.  
-Projeler ilerledikçe kullanılan kontrol yapıları ve problem çözme becerileri çeşitlenmektedir.
-
----
-
-## 🎯 Bu Klasörün Amacı
-- Temel Java konularını gerçek uygulamalara dönüştürmek  
-- if–else ve switch–case yapıları üzerinde pratik yapmak  
-- Kullanıcı girdileriyle çalışan programlar geliştirmek  
-- Öğrenme sürecini düzenli ve okunabilir bir yapıda belgelemek  
+This folder contains small yet educational **Java console projects** developed using core Java concepts.  
+Each project focuses on a simple real-world problem and is designed with clear logic and user interaction in mind.  
+As the projects progress, the complexity of control structures and problem-solving techniques increases.
 
 ---
 
-## ▶️ ATM — Basit ATM Uygulaması
+## 🎯 Purpose of This Folder
 
-Bu proje, kullanıcıyla etkileşimli şekilde **para yatırma, para çekme ve bakiye sorgulama**
-işlemlerini yapabilen temel bir ATM simülasyonudur.
+- Transform fundamental Java concepts into real applications  
+- Practice if–else and switch–case decision structures  
+- Develop programs that interact with user input  
+- Document the learning process in a structured and readable way  
 
-### 🧠 Öğrenilenler
-- Kullanıcıdan veri alma (`Scanner`)  
-- if–else karar yapıları  
-- Değişkenlerin güncellenmesi  
-- Konsol tabanlı menü tasarımı  
+---
 
-### 📤 Örnek Akış
-=== ATM UYGULAMASI ===  
-1- Para Yatır  
-2- Para Çek  
-3- Bakiye Sorgula  
-Seçiminiz: 2  
-Çekilecek miktar:  
+## ▶️ ATM — Basic ATM Application
+
+This project is a simple ATM simulation that allows users to perform
+**deposit**, **withdraw**, and **balance inquiry** operations through an interactive console menu.
+
+### 🧠 Concepts Practiced
+- User input handling with `Scanner`  
+- if–else decision structures  
+- Variable updates  
+- Console-based menu design  
+
+### 📤 Sample Flow
+=== ATM APPLICATION ===  
+1- Deposit  
+2- Withdraw  
+3- Check Balance  
+Your choice: 2  
+Withdrawal amount:  
 500  
-Yeni bakiye: 500  
+New balance: 500  
 
 ---
 
-## ▶️ Geometry Calculator — Geometrik Hesaplama Aracı
+## ▶️ Geometry Calculator — Geometric Calculation Tool
 
-Bu proje, kullanıcıdan alınan değerlere göre **üçgen ve daire**
-için alan ve çevre hesaplamaları yapar.
+This project calculates **area and perimeter values**
+for **triangles and circles** based on user input.
 
-### 🧠 Öğrenilenler
-- Çoklu kullanıcı girdisi alma  
-- Geometrik formüllerin uygulanması  
-- Switch–case ile işlem seçimi  
-- Matematiksel işlemler  
+### 🧠 Concepts Practiced
+- Handling multiple user inputs  
+- Applying geometric formulas  
+- Operation selection using switch–case  
+- Mathematical computations  
 
-### 📤 Örnek Akış
+### 📤 Sample Flow
 === GEOMETRY CALCULATOR ===  
-1- Üçgen  
-2- Daire  
-Seçiminiz: 1  
-Kenarlar:  
+1- Triangle  
+2- Circle  
+Your choice: 1  
+Sides:  
 3 4 5  
-Alan: 6.0  
+Area: 6.0  
 
 ---
 
-## ▶️ SmartCityAssistant — Akıllı Şehir Hizmet Asistanı
+## ▶️ SmartCityAssistant — Smart City Services Assistant
 
-Bu proje, kullanıcıya sunulan bir menü üzerinden
-**taksi ücreti**, **elektrik faturası** ve **sağlık (BMI & ideal kilo)**
-hesaplamaları yapan bir Java konsol uygulamasıdır.
+This project is a Java console application that provides multiple services through a menu system, including:
+**taxi fare calculation**, **electricity bill calculation**, and **health analysis (BMI & ideal weight)**.
 
-Program, kullanıcıdan giriş bilgileri alarak
-seçilen hizmete göre farklı hesaplamalar gerçekleştirir.
+The program collects user input and performs different calculations based on the selected service.
 
-### 🧠 Öğrenilenler
-- if–else ile doğrulama ve kontrol  
-- switch–case ile menü yönetimi  
-- Kullanıcıdan çoklu veri alma  
-- Matematiksel hesaplamalar  
-- Konsol çıktısı ile sonuç sunma  
+### 🧠 Concepts Practiced
+- Validation and control using if–else  
+- Menu management with switch–case  
+- Handling multiple user inputs  
+- Mathematical calculations  
+- Presenting results via console output  
 
-### 📤 Örnek Akış
-Kullanıcı adı: İrem  
-PIN oluştur: 1234  
-PIN gir: 1234  
+### 📤 Sample Flow
+Username: Irem  
+Create PIN: 1234  
+Enter PIN: 1234  
 
-1-Taksi  2-Elektrik  3-Sağlık  
-Seçim: 1  
+1-Taxi  2-Electricity  3-Health  
+Choice: 1  
 
-Mesafe (km): 10  
-Zaman (day/night): day  
-Hafta sonu (yes/no): no  
+Distance (km): 10  
+Time (day/night): day  
+Weekend (yes/no): no  
 
-Taksi Ücreti: $18.00  
+Taxi Fare: $18.00  
 
 ---
 
-## ▶️ Sayı Tahmin Oyunu — GuessNumber Game (Geliştirilmiş)
+## ▶️ Guess the Number — GuessNumber Game (Enhanced)
 
-Bu proje, bilgisayarın 0–100 arasında tuttuğu sayıyı tahmin etmeye dayalı
-interaktif bir konsol oyunudur.  
-Oyun, kullanıcı davranışlarını kontrol eden ek kurallar içerir.
+This project is an interactive console game where the user attempts to guess a randomly generated number between 0 and 100.  
+The game includes additional rules to control invalid user behavior.
 
-### 🧠 Öğrenilenler
-- Rastgele sayı üretme (`Math.random()`)  
-- while döngüsü ile tekrar eden giriş alma  
-- Girdi doğrulama (range kontrolü)  
-- Kullanıcıyı yönlendiren uyarı mekanizmaları  
+### 🧠 Concepts Practiced
+- Random number generation (`Math.random()`)  
+- Repetitive input handling using a while loop  
+- Input validation (range checking)  
+- User guidance through warning messages  
 
-### 📤 Örnek Akış
-Tahmininiz: 150  
-Geçersiz giriş! Lütfen 0-100 arasında bir sayı giriniz.
+### 📤 Sample Flow
+Your guess: 150  
+Invalid input! Please enter a number between 0 and 100.
 
 ---
 
-## ▶️ Quadratic Equation Solver — İkinci Dereceden Denklem Çözücü
+## ▶️ Quadratic Equation Solver
 
-Bu proje, kullanıcıdan alınan katsayılara göre
-**ax² + bx + c = 0** biçimindeki denklemleri analiz eder
-ve uygun kökleri hesaplar.
+This project analyzes and solves equations of the form
+**ax² + bx + c = 0** based on user-provided coefficients.
 
-### 🧠 Öğrenilenler
-- Matematiksel problem analizi  
-- Diskriminant (Delta) hesaplama  
-- İç içe if–else yapıları  
-- Sayısal sonuçları formatlı yazdırma  
+### 🧠 Concepts Practiced
+- Mathematical problem analysis  
+- Discriminant (Delta) calculation  
+- Nested if–else structures  
+- Formatted numerical output  
 
-### 📤 Örnek Akış
-Katsayıları girin:  
+### 📤 Sample Flow
+Enter coefficients:  
 1  -3  2  
 
 Delta: 1  
@@ -131,13 +128,11 @@ x2: 1.00
 
 ---
 
-## ▶️ Çalıştırma
+## ▶️ How to Run
 
-Tüm projeler kendi klasörleri içinde yer alır.  
-İlgili `Main.java` veya ana sınıf dosyası çalıştırılarak
-konsol üzerinden kullanılabilir.
+Each project is located in its own folder.  
+You can run the corresponding `Main.java` (or main class) file to interact with the application via the console.
 
 ---
 
-📌 Bu klasör, Java öğrenme sürecimde temel kavramları
-küçük ama anlamlı projelerle pekiştirmek amacıyla oluşturulmuştur.
+📌 This folder was created to reinforce fundamental Java concepts through small but meaningful projects during the learning process.
