@@ -1,89 +1,94 @@
-# 📁 switch-case — Menü ve Karar Yapıları
+# 📁 switch-case — Menu and Decision Structures
 
-Bu klasör, Java’da switch-case yapısını gerçekçi örneklerle pekiştirmek için hazırlanmış iki mini proje içerir: bir konsol menü uygulaması ve bir matematiksel zeka testi sistemi.
-
----
-
-## 🎯 Klasörün Amacı
-- Switch-case yapısını pratikte öğrenmek
-- Kullanıcıya çoklu seçenek sunmak
-- İç içe karar mekanizmaları tasarlamak
-- Menü mantığını gerçek senaryoda uygulamak
-- Matematiksel problem çözmeyi Java ile birleştirmek
+This folder contains two mini projects designed to reinforce the use of the switch-case structure in Java through realistic scenarios: a console-based menu system and a mathematical brain teaser application.
 
 ---
 
-# ▶️ 1. Menu.java — Konsol Tabanlı Menü Sistemi
+## 🎯 Purpose of This Folder
 
-Kullanıcıya üç seçenek sunar:
-
-1. **Giriş Sistemi** — Kullanıcı adı & şifre doğrulama  
-2. **Hesap Makinesi** — Toplama, çıkarma, çarpma, bölme  
-3. **Çıkış** — Programdan güvenli çıkış  
-
-### 🧠 Kod Mantığı
-- switch-case ile seçim yapılır  
-- İç içe switch-case ile hesaplama işlemi seçilir  
-- Sıfıra bölme kontrolü yapılır  
+- Practice switch-case structures in real use cases
+- Present multiple options to the user
+- Design nested decision-making mechanisms
+- Apply menu logic in practical scenarios
+- Combine mathematical problem-solving with Java
 
 ---
 
-# ▶️ 2. BrainTeaserPicker — Matematiksel Zeka Testi (Switch-Case)
+# ▶️ 1. Menu.java — Console-Based Menu System
 
-Bu mini proje, kullanıcının seçtiği zorluk seviyesine göre bir matematik sorusu sorar ve cevabı doğrular.
+This application presents three options to the user:
 
----
+1. **Login System** — Username and password verification  
+2. **Calculator** — Addition, subtraction, multiplication, division  
+3. **Exit** — Safe program termination  
 
-## 🧠 Zorluk Seviyeleri ve Sorular
+### 🧠 Logic Overview
 
-### 1️⃣ Kolay Soru
-Dizi: 2, 4, 6, 8, ?  
-Doğru cevap → **10**
-
----
-
-### 2️⃣ Orta Soru
-Bir saatte akrep ve yelkovan kaç kez üst üste gelir?  
-Doğru cevap → **1**
+- User selections are handled using switch-case
+- Nested switch-case structures are used for calculator operations
+- Division-by-zero checks are implemented
 
 ---
 
-### 3️⃣ Zor Soru
-Bir sayı 6 ile çarpılıp 9 çıkarıldığında, aynı sayının 3 ile çarpılıp 4 eklendiğinden 20 fazladır.  
-Doğru cevap → **11**
+# ▶️ 2. BrainTeaserPicker — Mathematical Brain Teaser (Switch-Case)
+
+This mini project presents a mathematical question based on the difficulty level selected by the user and validates the answer.
 
 ---
 
-### 4️⃣ Aşırı Zor Soru
-Bir pozitif tam sayının 3 katına 4 eklendiğinde sonuç, sayının 5 katından 10 eksiktir.  
-Doğru cevap → **7**
+## 🧠 Difficulty Levels and Questions
+
+### 1️⃣ Easy
+Sequence: 2, 4, 6, 8, ?  
+Correct answer → **10**
 
 ---
 
-# 🧩 Öğrenilen Konular
-- Çoklu seçim yapısı (switch-case)
-- İç içe karar blokları
-- Kullanıcı girdisi alma (Scanner)
-- Menü tasarımı
-- Matematiksel problem çözümü
+### 2️⃣ Medium
+How many times do the hour and minute hands overlap in one hour?  
+Correct answer → **1**
 
 ---
 
-# 📤 Örnek Kullanıcı Akışı
-===== Zeka Testi =====  
-1 - Kolay  
-2 - Orta  
-3 - Zor  
-4 - Aşırı Zor  
-Seçiminiz: 3  
-Cevap: 11  
-Doğru! 🎉
+### 3️⃣ Hard
+When a number is multiplied by 6 and 9 is subtracted, the result is 20 more than when the same number is multiplied by 3 and 4 is added.  
+Correct answer → **11**
 
 ---
 
-# ▶️ Çalıştırma
-Her klasördeki `Main.java` dosyası IntelliJ IDEA veya herhangi bir Java IDE üzerinden doğrudan çalıştırılabilir.
+### 4️⃣ Extreme
+When 4 is added to three times a positive integer, the result is 10 less than five times the number.  
+Correct answer → **7**
 
 ---
 
-📌 *Bu klasör, switch-case yapısını hem menü kontrolü hem de interaktif matematik testleri ile öğrenmek isteyenler için kapsamlı bir örnek sunar.*
+# 🧩 Concepts Covered
+
+- Multi-branch decision structures (switch-case)
+- Nested decision blocks
+- User input handling (`Scanner`)
+- Menu design
+- Mathematical problem-solving
+
+---
+
+# 📤 Sample User Flow
+
+===== Brain Teaser =====  
+1 - Easy  
+2 - Medium  
+3 - Hard  
+4 - Extreme  
+Your choice: 3  
+Answer: 11  
+Correct! 🎉
+
+---
+
+# ▶️ How to Run
+
+Each `Main.java` file in its respective folder can be executed directly using IntelliJ IDEA or any Java-compatible IDE.
+
+---
+
+📌 This folder provides a comprehensive set of examples for learning switch-case structures through both menu-driven applications and interactive mathematical challenges.
