@@ -53,6 +53,39 @@ Key concepts:
 
 ---
 
+### ▶️ CharacterReplacer
+A string manipulation application that replaces all occurrences of a specific character with another character using a **custom method**.
+
+Features:
+- Takes a text input from the user  
+- Replaces a target character without using built-in replace functions  
+- Builds and returns a new modified string  
+
+Key concepts:
+- Methods returning `String` values  
+- Loop-based string traversal  
+- Character comparison and replacement  
+- Manual string manipulation logic  
+
+---
+
+### ▶️ SpeedCalculator
+An average speed analysis application that calculates speed, performs unit conversion, and categorizes the result using **multiple methods**.
+
+Features:
+- Calculates average speed based on distance and time  
+- Converts speed from km/h to m/s  
+- Categorizes speed (walking, running, vehicle, high speed)  
+- Validates input values (time > 0)  
+
+Key concepts:
+- Multiple method cooperation  
+- Mathematical calculations and unit conversion  
+- Input validation inside methods  
+- Returning numerical and textual results  
+
+---
+
 ## 📄 Folder Structure
 
 methods/
@@ -60,6 +93,12 @@ methods/
 │   ├── Main.java
 │   └── README.md
 ├── StringCharacterCounter/
+│   ├── Main.java
+│   └── README.md
+├── CharacterReplacer/
+│   ├── Main.java
+│   └── README.md
+├── SpeedCalculator/
 │   ├── Main.java
 │   └── README.md
 └── README.md
