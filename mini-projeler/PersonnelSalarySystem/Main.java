@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class PersonelSistemi {
+public class PersonnelSalarySystem {
     public static void main(String[] args) {
-        
+       
         ArrayList<Object[]> personeller = new ArrayList<>();
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
         while (true) {
             System.out.println("\n--- PERSONEL MAAŞ SİSTEMİ ---");
@@ -13,37 +13,37 @@ public class PersonelSistemi {
             System.out.println("2- Listele");
             System.out.println("3- Çıkış");
             System.out.print("Seçiminiz: ");
-            String secim = scanner.nextLine();
+            String secim = input.nextLine();
 
             if (secim.equals("1")) {
                 System.out.print("Personel Adını giriniz: ");
-                String personelAdi = scanner.nextLine();
+                String personelAdi = input.nextLine();
 
                 System.out.println("Personel Türü:");
                 System.out.println("1- Tam Zamanlı (TZ)");
                 System.out.println("2- Yarı Zamanlı (YZ)");
                 System.out.print("Seçiminiz: ");
-                String secim2 = scanner.nextLine();
+                String secim2 = input.nextLine();
 
                 double maas = 0;
 
                 if (secim2.equals("1")) {
                     System.out.print("Taban Ücretini giriniz: ");
-                    double tabanUcret = Double.parseDouble(scanner.nextLine());
+                    double tabanUcret = Double.parseDouble(input.nextLine());
                     System.out.print("Aylık Satış Tutarını giriniz: ");
-                    double aylikSatis = Double.parseDouble(scanner.nextLine());
-                    
+                    double aylikSatis = Double.parseDouble(input.nextLine());
+
                     double prim = aylikSatis * 0.02;
                     maas = tabanUcret + prim;
 
                 } else if (secim2.equals("2")) {
                     System.out.print("Çalışılan Saati giriniz: ");
-                    double calisilanSaat = Double.parseDouble(scanner.nextLine());
+                    double calisilanSaat = Double.parseDouble(input.nextLine());
                     System.out.print("Saat Ücretini giriniz: ");
-                    double saatUcreti = Double.parseDouble(scanner.nextLine());
+                    double saatUcreti = Double.parseDouble(input.nextLine());
                     System.out.print("Aylık Satış Tutarını giriniz: ");
-                    double aylikSatis = Double.parseDouble(scanner.nextLine());
-                    
+                    double aylikSatis = Double.parseDouble(input.nextLine());
+
                     double prim = aylikSatis * 0.01;
                     maas = (calisilanSaat * saatUcreti) + prim;
 
@@ -51,7 +51,7 @@ public class PersonelSistemi {
                     System.out.println("Hatalı personel türü!");
                     continue;
                 }
-
+                
                 personeller.add(new Object[]{personelAdi, maas});
                 System.out.println("Personel başarıyla eklendi.");
 
@@ -72,6 +72,6 @@ public class PersonelSistemi {
                 System.out.println("Hatalı seçim! Tekrar deneyiniz.");
             }
         }
-        scanner.close();
+        input.close();
     }
 }
