@@ -12,44 +12,71 @@ As new examples are added, this README will be updated accordingly.
 - Understand how arrays store and organize data  
 - Practice traversing arrays using loops  
 - Apply mathematical and logical operations on array elements  
-- Classify and analyze data stored in arrays  
-- Reinforce algorithmic thinking with real examples  
+- Classify, analyze, and summarize array data  
+- Reinforce algorithmic thinking with real-world examples  
 
 ---
 
 ## 📌 Current Examples
 
+---
+
 ### ▶️ ArraySum
-This example calculates the sum of elements in an integer array using a **for-each loop** and prints the result to the console.
+Calculates the sum of elements in an integer array using a **for-each loop** and prints the result to the console.
 
 Key concepts:
 - Array definition and initialization  
 - Accumulator variables  
 - for-each loop traversal  
 
-#### Sample Output
+**Sample Output**
 Array: {10, 20, 30, 40, 50}  
-Output:  
 Array sum: 150  
 
 ---
 
 ### ▶️ PrimeNumberAnalyzer
-This project analyzes an array of integers entered by the user, classifies them as **prime** or **non-prime**, and calculates the **sum of each group**.
+Analyzes an array of integers entered by the user, classifies them as **prime** or **non-prime**, and calculates the **sum of each group**.
 
 Key concepts:
-- Dynamic array creation based on user input  
-- Prime number checking logic  
+- Dynamic array creation  
+- Prime number checking algorithm  
 - Nested loops  
 - Conditional classification  
-- Accumulating results for multiple categories  
+- Group-based accumulation  
 
-#### Sample Output
+**Sample Output**
 Prime Numbers: 2 5 7  
 Sum of Prime Numbers: 14  
 
 Non-Prime Numbers: 4 6  
 Sum of Non-Prime Numbers: 10  
+
+---
+
+### ▶️ ArrayStatisticsAnalyzer
+Performs a comprehensive analysis on a user-defined integer array and generates a detailed **array analysis report**.
+
+The program calculates:
+- Maximum value  
+- Minimum value  
+- Sum of elements  
+- Average value  
+- Duplicate elements (if any)
+
+Key concepts:
+- Dynamic array input  
+- Enhanced for-each loop  
+- Nested loops for duplicate detection  
+- Statistical calculations  
+- Formatted console output  
+
+**Sample Output**
+Maximum Value      : 9  
+Minimum Value      : 3  
+Sum of Numbers     : 32  
+Average            : 5.33  
+Duplicates         : 5 3  
 
 ---
 
@@ -62,20 +89,23 @@ arrays/
 ├── PrimeNumberAnalyzer/
 │   ├── Main.java
 │   └── README.md
+├── ArrayStatisticsAnalyzer/
+│   ├── Main.java
+│   └── README.md
 └── README.md
 
 ---
 
 ## 🚀 Future Additions
 
-This folder will be expanded over time with additional array-based examples, such as:
+This folder will be expanded over time with additional array-based examples, including:
 
-- Average calculation  
-- Finding the maximum / minimum value  
-- Linear search algorithms  
-- Dynamic array input and validation  
+- Average calculation enhancements  
+- Finding maximum / minimum with optimized algorithms  
+- Linear and binary search  
+- Frequency analysis  
 - Multidimensional array operations  
 
 ---
 
-This folder provides a structured learning path for mastering array manipulation and analysis in Java.
+This folder provides a structured learning path for mastering array manipulation, analysis, and algorithmic thinking in Java.
