@@ -1,7 +1,6 @@
 import java.util.Scanner;
-public class deneme5
-public class Main{
-    public static void main(String[] args){
+public class GradeCalculator {
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
         System.out.println("===== NOT HESAPLAYICISI ======");
@@ -75,5 +74,4 @@ public class Main{
         System.out.println("Harf notu: " + harf);
         System.out.println("Açıklama: " + aciklama);
     }
-}{
 }
